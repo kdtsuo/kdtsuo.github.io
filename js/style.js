@@ -44,3 +44,16 @@ function toggleNavbar() {
         navbarMobile.style.display = "none";
     }
 }
+
+let resizeTimeout;
+
+window.addEventListener("resize", () => {
+    clearTimeout(resizeTimeout);
+
+    resizeTimeout = setTimeout(() => {
+        if (navbarMobile) {
+            navbarMobile.style.display = "none";
+        }
+    }, 1);
+}
+);

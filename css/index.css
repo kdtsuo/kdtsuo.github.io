@@ -9,7 +9,7 @@
   color: var(--color-2);
 }
 .home-info h1 {
-  margin: 0px;
+  margin: 15px;
 }
 
 .home-title {
@@ -357,7 +357,6 @@
   .media img {
     max-width: 600px;
     max-height: 880px;
-    opacity: 0.75;
   }
 
   .media-text {
@@ -444,7 +443,6 @@
   .media img {
     max-width: 350px;
     max-height: 400px;
-    opacity: 0.75;
   }
 
   .media-text {
