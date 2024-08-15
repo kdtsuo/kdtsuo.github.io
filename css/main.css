@@ -73,15 +73,16 @@ body {
 .links-list a {
   text-decoration: none;
   color: var(--color-2);
+  transition: color 0.25s ease;
 }
 
 .links-list a:hover {
-  color: white;
+  color: var(--color-6);
   animation: nudgeUpHalf 0.25s ease forwards;
 }
 
 .links-list a:not(:hover) {
-  color: var(--color-6);
+  color: var(--color-2);
   animation: nudgeDownHalf 0.25s ease forwards;
 }
 
