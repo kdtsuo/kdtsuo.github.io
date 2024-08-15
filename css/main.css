@@ -1,12 +1,12 @@
 :root {
   --font-body: "Hind Siliguri", sans-serif;
   --font-nav: "Bebas Neue", sans-serif;
-  --color-1: #c8d9ed;
+  --color-1: #b9e6ff;
   --color-2: #e1f1fd;
   --color-3: #c1d8f0;
   --color-4: #4663ac;
   --color-5: #d2deeb;
-  --color-link: white;
+  --color-link: #e1f1fd;
 }
 
 body {
@@ -18,15 +18,15 @@ body {
 /* nav bar */
 .navbar {
   display: flex;
-  margin: 50px;
+  margin: 0px;
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: var(--color-1);
 }
 
 .navbar-logo-image {
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .navbar-icon {
@@ -42,7 +42,7 @@ body {
 .navbar-logo {
   display: flex;
   align-items: center;
-  margin: 0 150px;
+  padding: 0px 200px;
 }
 
 .navbar-divider {
@@ -72,8 +72,8 @@ body {
 }
 
 .links-list a:hover {
-  color: var(--color-2);
-  animation: nudgeUpHalf 0.5s ease forwards;
+  color: white;
+  animation: nudgeUpHalf 0.25s ease forwards;
 }
 
 .links-list a:not(:hover) {
@@ -115,14 +115,14 @@ body {
 }
 
 .ql {
-  max-width: 35px;
-  max-height: 35px;
+  max-width: 45px;
+  max-height: 45px;
   padding: 10px;
   opacity: 0.5;
 }
 .ql:hover {
   opacity: 1;
-  animation: fadeInHalf 0.5s ease forwards, nudgeUpHalf 0.5s ease forwards;
+  animation: fadeInHalf 0.25s ease forwards, nudgeUpHalf 0.25s ease forwards;
 }
 
 .ql:not(:hover) {
@@ -156,9 +156,11 @@ body {
     display: inline-block;
   }
   .links-list {
-    display: block;
+    display: flex;
+    justify-content: center;
     font-size: 35px;
   }
+
   .quicklinks-imgs {
     display: flex;
     justify-content: center;
@@ -181,22 +183,29 @@ body {
 @media (max-width: 840px) {
   .navbar {
     display: flex;
-    margin: 0 35px;
+    justify-content: space-between;
+
+    margin: 0 0px;
   }
   .navbar-logo {
     display: flex;
-    margin: 35px 15px 35px 15px;
+    align-items: center;
+    margin: 0px 0px 0px 25px;
+    padding: 0px 100px 0px 0px;
   }
   .navbar-logo-image {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 125px;
+    max-height: 125px;
   }
   .navbar-icon {
     display: flex;
-    align-self: center;
-    margin: 35px 15px 35px 0;
+    margin: 0;
     opacity: 0.5;
     transition: opacity 250ms ease;
+    margin: 0px 25px 0px 0px;
+  }
+  .navbar-toggle {
+    align-self: center;
   }
 
   .navbar-icon:hover {

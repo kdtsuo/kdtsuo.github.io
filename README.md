@@ -1,5 +1,5 @@
 # Hello!
 
-## This website is coded entirely by Rin, please suggest or submit changes via our discord
+## This website is coded entirely by [rin](https://rin-williams.github.io) with some helping hands of the KDT Executives, please suggest or submit changes via our [discord](https://discord.gg/tbKkvjV2W8)
 
 ## You can visit the website [here](https://kdtsuo.github.io)

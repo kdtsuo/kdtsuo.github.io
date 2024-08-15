@@ -1,7 +1,16 @@
+.home-info {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-2);
+}
+.home-info h1 {
+  margin: 0px;
+}
+
 .home-title {
   font-size: 2rem;
   text-align: center;
-  margin: 50px;
+  margin: 25px;
 }
 .home-title h1 {
   margin: 0;
@@ -80,7 +89,7 @@
 .about-content img {
   max-width: 800px;
   max-height: 800px;
-  margin: 50px;
+  margin: 25px;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
   border-radius: 0.5rem;
 }
@@ -88,25 +97,87 @@
 .about-description {
   margin: 25px;
   max-width: 600px;
-}
-
-.about-description h1 {
   font-size: 1.5rem;
 }
 
 /* == */
 
-/* Media query */
+/* positions */
 
+.positions {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.positions-title {
+  font-size: 2rem;
+  color: var(--color-4);
+}
+
+/* contacts */
+.contacts-title {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-4);
+}
+.contacts-social-medias ul {
+  list-style-type: none;
+  text-decoration: none;
+
+  margin: 0;
+  padding: 0;
+  color: var(--color-link);
+}
+.contacts-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.ct {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 10px;
+  opacity: 0.5;
+}
+
+.ct:hover {
+  opacity: 1;
+  animation: fadeInHalf 0.25s ease forwards,
+    wiggleXAndNudgeUp 0.25s ease forwards;
+}
+
+.ct:not(:hover) {
+  animation: fadeOutHalf 0.25s ease forwards, nudgeDown 0.25s ease forwards;
+}
+
+/* == */
+
+/* farewell */
+.farewell-title {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-2);
+}
+/* == */
+
+/* Media query */
 @media (max-width: 1375px) {
   .about-container {
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin: 25px 50px;
   }
   .home-title {
-    margin: 0;
+    margin: 25px;
     font-size: 1.5rem;
     text-align: center;
+  }
+  .about-title {
+    margin: 25px;
+    font-size: 1.5rem;
   }
   .about-content img {
     max-width: 500px;
@@ -115,6 +186,20 @@
   }
   .about-description {
     max-width: 500px;
+    margin: 50px;
+  }
+  .positions {
+    margin: 25px;
+  }
+  .positions-title {
+    font-size: 1.5rem;
+  }
+  .contacts-title {
+    font-size: 1.5rem;
+  }
+  .ct {
+    max-width: 150px;
+    max-height: 150px;
   }
 }
 @media (max-width: 840px) {
@@ -163,4 +248,20 @@
   .about-description p {
     font-size: 1rem;
   }
+  .contacts-title {
+    font-size: 0.75rem;
+  }
+
+  .ct {
+    max-width: 75px;
+    max-height: 75px;
+  }
+  .farewell-title {
+    font-size: 0.6rem;
+  }
+  .farewell-title img {
+    max-width: 250px;
+    max-height: 250px;
+  }
 }
+/* == */
