@@ -167,6 +167,16 @@ body {
 /* == */
 
 /* navbar mobile version */
+.navbar-toggle {
+  align-self: center;
+}
+.navbar-toggle-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 5px;
+}
 .navbar-mobile {
   display: none;
   position: fixed;
@@ -349,9 +359,6 @@ body {
     margin: 0px;
     padding: 25px;
     cursor: pointer;
-  }
-  .navbar-toggle {
-    align-self: center;
   }
 
   .navbar-icon:hover {

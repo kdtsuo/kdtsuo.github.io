@@ -50,7 +50,7 @@ function toggleNavbar() {
         setTimeout(() => {
             navbarMobile.style.display = "none";
             navbarMobile.classList.remove("fadeAway");
-        }, 500);
+        }, 1);
 
         navbarOpen = false;
     }
