@@ -34,3 +34,13 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+// navbar display
+let navbarMobile = document.getElementsByClassName("navbar-mobile")[0];
+function toggleNavbar() {
+    if (navbarMobile.style.display === "none") {
+        navbarMobile.style.display = "block";
+    } else {
+        navbarMobile.style.display = "none";
+    }
+}

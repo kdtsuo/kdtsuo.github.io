@@ -68,12 +68,18 @@
                 </li>
             </ul>
         </div>
-        <div class="navbar-toggle">
-            <a href=""><img src="imgs/navbaricon.png" class="navbar-icon"></a>
+
+        <div class="navbar-toggle" onclick="toggleNavbar()">
+            <img src="imgs/navbaricon.png" class="navbar-icon">
         </div>
+
         <button onclick="topFunction()" id="upButton" title="go back to home">
             <img src="imgs/uparrow.png">
         </button>
+
+        <div class="navbar-mobile">
+            <img src="imgs/infologo.png" onclick="toggleNavbar()">
+        </div>
     </nav>
 
     <div class="home" id="home">
