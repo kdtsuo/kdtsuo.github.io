@@ -57,14 +57,28 @@ function toggleNavbar() {
 }
 
 let resizeTimeout;
+let scrollTimeout;
+
+const handleNavbarFade = () => {
+    if (navbarMobile) {
+        navbarMobile.classList.add("fadeAway");
+        setTimeout(() => {
+            navbarMobile.style.display = "none";
+            navbarMobile.classList.remove("fadeAway");
+        }, 500);
+
+        navbarOpen = false;
+    }
+};
 
 window.addEventListener("resize", () => {
     clearTimeout(resizeTimeout);
 
-    resizeTimeout = setTimeout(() => {
-        if (navbarMobile) {
-            navbarMobile.style.display = "none";
-        }
-    }, 1);
-}
-);
+    resizeTimeout = setTimeout(handleNavbarFade, 1);
+});
+
+window.addEventListener("scroll", () => {
+    clearTimeout(scrollTimeout);
+
+    scrollTimeout = setTimeout(handleNavbarFade, 1);
+});
