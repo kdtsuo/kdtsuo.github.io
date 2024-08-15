@@ -222,10 +222,10 @@
 .card:hover {
   opacity: 1;
   background-color: var(--color-5);
-  animation: hoverZoomIn 0.5s ease forwards;
+  animation: hoverZoomIn 0.25s ease forwards;
 }
 .card:not(:hover) {
-  animation: hoverZoomOut 0.5s ease forwards;
+  animation: hoverZoomOut 0.25s ease forwards;
 }
 .card img {
   border-radius: 20px;
