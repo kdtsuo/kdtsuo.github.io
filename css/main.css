@@ -9,6 +9,9 @@
   --color-6: #e1f1fd;
   --color-7: black;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: var(--color-1);
