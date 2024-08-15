@@ -422,7 +422,7 @@
     font-size: 1rem;
   }
   .media {
-    margin: 5px;
+    margin: 15px 0px;
   }
 
   .media img {
@@ -435,9 +435,9 @@
     position: absolute;
     max-width: 400px;
     max-height: 400px;
-    top: 40%;
-    left: 30%;
-    transform: translate(-30%, -40%);
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
     text-align: left;
     font-size: var(--smallTS);
   }
@@ -456,7 +456,7 @@
     font-size: var(--midTS);
   }
   .portfolio p {
-    margin: 0px 25px;
+    margin: 0px 25px 25px 25px;
   }
   .portfolio-container {
     margin: 0px;
