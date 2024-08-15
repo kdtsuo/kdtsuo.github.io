@@ -136,6 +136,7 @@
 .media {
   position: relative;
   text-align: left;
+  margin: 25px 0px;
 }
 .media img {
   max-width: 800px;
@@ -322,6 +323,25 @@
   .portfolio {
     font-size: var(--midTS);
   }
+  .media {
+    margin: 5px;
+  }
+  .media img {
+    max-width: 600px;
+    max-height: 880px;
+    opacity: 0.75;
+  }
+
+  .media-text {
+    position: absolute;
+    max-width: 900px;
+    max-height: 400px;
+    top: 40%;
+    left: 30%;
+    transform: translate(-30%, -40%);
+    text-align: left;
+    font-size: var(--smallTS);
+  }
   .positions {
     margin: 25px;
   }
@@ -389,11 +409,54 @@
   .about-description p {
     font-size: 1rem;
   }
-  .positions {
+  .media {
+    margin: 5px;
+  }
+
+  .media img {
+    max-width: 350px;
+    max-height: 400px;
+    opacity: 0.75;
+  }
+
+  .media-text {
+    position: absolute;
+    max-width: 400px;
+    max-height: 400px;
+    top: 40%;
+    left: 30%;
+    transform: translate(-30%, -40%);
+    text-align: left;
+    font-size: var(--smallTS);
+  }
+
+  .media-text h1 {
+    font-size: 1rem;
+  }
+  .media-text p {
+    font-size: 1rem;
+  }
+
+  .portfolio {
     margin: 25px;
   }
-  .positions-title {
-    font-size: 1rem;
+  .portfolio-title h1 {
+    font-size: var(--midTS);
+  }
+  .portfolio p {
+    margin: 0px 25px;
+  }
+  .portfolio-container {
+    margin: 0px;
+  }
+  .positions {
+    margin: 25px 25px 0px 25px;
+  }
+  .positions-title h1 {
+    font-size: var(--midTS);
+  }
+  .positions p {
+    margin: 0px 25px;
   }
   .card {
     max-width: 300px;
@@ -404,12 +467,12 @@
     max-height: 300px;
   }
   .contacts-title h1 {
-    font-size: 1.25rem;
+    font-size: var(--textSize);
   }
 
   .ct {
-    max-width: 75px;
-    max-height: 75px;
+    max-width: 100px;
+    max-height: 100px;
   }
   .farewell-title {
     font-size: 0.6rem;
