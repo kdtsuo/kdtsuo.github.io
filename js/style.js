@@ -15,3 +15,22 @@ document.querySelectorAll('.media').forEach(mediaElement => {
         }
     });
 });
+// button
+let upButton = document.getElementById("upButton");
+
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        upButton.style.display = "block"; // Added quotes around block
+    } else {
+        upButton.style.display = "none"; // Added quotes around none
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

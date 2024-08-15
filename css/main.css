@@ -2,11 +2,12 @@
   --font-body: "Hind Siliguri", sans-serif;
   --font-nav: "Bebas Neue", sans-serif;
   --color-1: #b9e6ff;
-  --color-6: #e1f1fd;
+  --color-2: white;
   --color-3: #c1d8f0;
   --color-4: #4663ac;
   --color-5: #d2deeb;
-  --color-2: white;
+  --color-6: #e1f1fd;
+  --color-7: black;
 }
 
 body {
@@ -128,6 +129,38 @@ body {
 .ql:not(:hover) {
   animation: fadeOutHalf 0.25s ease forwards, nudgeDownHalf 0.25s ease forwards;
 }
+/* == */
+
+/* button */
+#upButton {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  opacity: 0.75;
+  cursor: white;
+  cursor: pointer;
+  padding: 30px;
+  background: none;
+}
+#upButton img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+#upButton:hover {
+  opacity: 1;
+  animation: nudgeUp 0.25s ease forwards;
+}
+
+#upButton:not(:hover) {
+  animation: nudgeDown 0.25s ease forwards;
+}
+
+/* == */
 
 @media (max-width: 1375px) {
   .navbar {
@@ -178,6 +211,10 @@ body {
     text-align: center;
     margin: 0;
   }
+  #upButton img {
+    max-width: 50px;
+    max-height: 50px;
+  }
 }
 
 @media (max-width: 840px) {
@@ -220,6 +257,14 @@ body {
   }
   .navbar-quicklinks {
     display: none;
+  }
+  #upButton {
+    bottom: 0px;
+    right: 0px;
+  }
+  #upButton img {
+    max-width: 25px;
+    max-height: 25px;
   }
 }
 .copyright {
