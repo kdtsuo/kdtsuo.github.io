@@ -2,11 +2,11 @@
   --font-body: "Hind Siliguri", sans-serif;
   --font-nav: "Bebas Neue", sans-serif;
   --color-1: #b9e6ff;
-  --color-2: #e1f1fd;
+  --color-6: #e1f1fd;
   --color-3: #c1d8f0;
   --color-4: #4663ac;
   --color-5: #d2deeb;
-  --color-link: #e1f1fd;
+  --color-2: white;
 }
 
 body {
@@ -47,7 +47,7 @@ body {
 
 .navbar-divider {
   align-self: center;
-  color: var(--color-link);
+  color: var(--color-6);
 }
 
 .navbar-links {
@@ -68,7 +68,7 @@ body {
 
 .links-list a {
   text-decoration: none;
-  color: var(--color-link);
+  color: var(--color-6);
 }
 
 .links-list a:hover {
@@ -77,7 +77,7 @@ body {
 }
 
 .links-list a:not(:hover) {
-  color: var(--color-link);
+  color: var(--color-6);
   animation: nudgeDownHalf 0.25s ease forwards;
 }
 
@@ -223,6 +223,6 @@ body {
   }
 }
 .copyright {
-  color: var(--color-2);
+  color: var(--color-6);
   text-align: center;
 }

@@ -1,3 +1,8 @@
+:root {
+  --textSize: 2rem;
+  --midTS: 1.5rem;
+  --smallTS: 1rem;
+}
 .home-info {
   font-size: 1rem;
   text-align: center;
@@ -8,7 +13,7 @@
 }
 
 .home-title {
-  font-size: 2rem;
+  font-size: var(--textSize);
   text-align: center;
   margin: 25px;
 }
@@ -78,7 +83,7 @@
 
 .about-title {
   margin: 50px;
-  font-size: 2rem;
+  font-size: var(--textSize);
 }
 .about-title h1 {
   color: var(--color-4);
@@ -99,6 +104,62 @@
   max-width: 600px;
   font-size: 1.5rem;
 }
+.about-description {
+  color: var(--color-4);
+}
+.about-description p {
+  color: var(--color-2);
+}
+
+.portfolio {
+  font-size: var(--textSize);
+  margin: 50px 50px 0px 50px;
+}
+
+.portfolio h1 {
+  color: var(--color-4);
+  margin: 0px;
+}
+
+.portfolio p {
+  margin: 25px;
+  color: var(--color-2);
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0px;
+}
+
+.media {
+  position: relative;
+  text-align: left;
+}
+.media img {
+  max-width: 800px;
+  max-height: 1080px;
+  opacity: 0.75;
+}
+
+.media-text {
+  position: absolute;
+  max-width: 900px;
+  max-height: 400px;
+  top: 40%;
+  left: 30%;
+  transform: translate(-30%, -40%);
+  text-align: left;
+  font-size: var(--smallTS);
+}
+
+.media-text h1 {
+  margin: 0px;
+}
+.media-text p {
+  margin: 0px;
+}
 
 /* == */
 
@@ -117,10 +178,11 @@
 }
 
 .positions-title h1 {
-  margin: 0px 0px;
+  margin: 0px;
 }
 
 .positions-title p {
+  color: var(--color-2);
   max-width: 800px;
   max-height: 250px;
   margin: 25px 25px 25px 25px;
@@ -166,6 +228,7 @@
   text-align: left;
   font-size: 1rem;
   margin: 25px;
+  color: var(--color-);
 }
 
 /* not available positions: change display to none. */
@@ -192,7 +255,7 @@
 
   margin: 0;
   padding: 0;
-  color: var(--color-link);
+  color: var(--color-6);
 }
 .contacts-imgs {
   display: flex;
@@ -231,7 +294,7 @@
 /* Media query */
 @media (max-width: 1375px) {
   .home-info h1 {
-    font-size: 1.5rem;
+    font-size: var(--midTS);
   }
   .about-container {
     justify-content: flex-start;
@@ -240,12 +303,12 @@
   }
   .home-title {
     margin: 25px;
-    font-size: 1.5rem;
+    font-size: var(--midTS);
     text-align: center;
   }
   .about-title {
     margin: 25px;
-    font-size: 1.5rem;
+    font-size: var(--midTS);
   }
   .about-content img {
     max-width: 500px;
@@ -256,17 +319,20 @@
     max-width: 500px;
     margin: 50px;
   }
+  .portfolio {
+    font-size: var(--midTS);
+  }
   .positions {
     margin: 25px;
   }
   .positions-title {
-    font-size: 1.5rem;
+    font-size: var(--midTS);
   }
   .positions-title p {
     margin: 25px 25px 0px 25px;
   }
   .contacts-title {
-    font-size: 1.5rem;
+    font-size: var(--midTS);
   }
   .ct {
     max-width: 150px;
