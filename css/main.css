@@ -72,7 +72,7 @@ body {
 
 .links-list a {
   text-decoration: none;
-  color: var(--color-6);
+  color: var(--color-2);
 }
 
 .links-list a:hover {
