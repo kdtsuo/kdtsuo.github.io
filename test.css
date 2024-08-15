@@ -1,0 +1,8 @@
+.media-text {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.media:hover + .media-text {
+  opacity: 1;
+}

@@ -228,88 +228,6 @@
   }
 }
 
-@keyframes flicker {
-  0% {
-    opacity: 0.3;
-  }
-
-  49% {
-    opacity: 0.3;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  60% {
-    opacity: 0.5;
-  }
-
-  65% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 0.5;
-  }
-
-  75% {
-    opacity: 1;
-  }
-
-  80% {
-    opacity: 0.5;
-  }
-
-  83% {
-    opacity: 1;
-  }
-
-  86% {
-    opacity: 0.5;
-  }
-
-  89% {
-    opacity: 1;
-  }
-
-  92% {
-    opacity: 0.5;
-  }
-
-  95% {
-    opacity: 1;
-  }
-
-  97% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes secondaryColorHover {
-  0% {
-    background-color: rgba(18, 148, 144, 0);
-  }
-
-  100% {
-    background-color: rgba(18, 148, 144, 0.25);
-  }
-}
-
-@keyframes secondaryColorNotHover {
-  0% {
-    background-color: rgba(18, 148, 144, 0.25);
-  }
-
-  100% {
-    background-color: rgba(18, 148, 144, 0);
-  }
-}
-
 @keyframes nudgeUp {
   0% {
     transform: translateY(0);
@@ -405,5 +323,50 @@
 
   100% {
     transform: translate(0px, -25px);
+  }
+}
+.fadeInM {
+  animation: fadeIn 0.25s ease forwards;
+}
+
+.fadeOutM {
+  animation: fadeOut 0.25s ease forwards;
+}
+
+@keyframes fadeInM {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutM {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes borderRound {
+  0% {
+    border-radius: 0px;
+  }
+
+  100% {
+    border-radius: 15px;
+  }
+}
+
+@keyframes borderUnRound {
+  0% {
+    border-radius: 15px;
+  }
+
+  100% {
+    border-radius: 0px;
   }
 }

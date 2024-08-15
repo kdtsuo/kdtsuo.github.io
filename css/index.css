@@ -129,19 +129,20 @@
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin: 50px 0px;
 }
 
 .media {
   position: relative;
   text-align: left;
-  margin: 25px 0px;
+  margin: 10px;
 }
 .media img {
   max-width: 800px;
   max-height: 1080px;
-  opacity: 0.75;
+  opacity: 1;
+  border-radius: 5px;
 }
 
 .media-text {
@@ -153,13 +154,24 @@
   transform: translate(-30%, -40%);
   text-align: left;
   font-size: var(--smallTS);
+  opacity: 0;
+  transition: opacity 250ms ease;
 }
 
 .media-text h1 {
   margin: 0px;
+  color: var(--color-2);
 }
 .media-text p {
   margin: 0px;
+}
+
+.media:hover {
+  animation: fadeOutHalf 0.25s ease forwards, nudgeUp 0.25s ease forwards;
+}
+
+.media:not(:hover) {
+  animation: fadeInHalf 0.25s ease forwards, nudgeDown 0.25s ease forwards;
 }
 
 /* == */

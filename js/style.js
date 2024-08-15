@@ -1,8 +1,17 @@
-// var allClasses = document.getElementsByTagName("div");
-// for (let i = 0; i < allClasses.length; i++) {
-//     let delay = (i * 0.15) + 0.5;
-//     allClasses[i].style.animation = `fadeIn 1s ${delay}s ease forwards`;
-// }
+document.querySelectorAll('.media').forEach(mediaElement => {
+    mediaElement.addEventListener('mouseover', () => {
+        const textElement = mediaElement.querySelector('.media-text');
+        if (textElement) {
+            textElement.classList.remove('fadeOutM');
+            textElement.classList.add('fadeInM');
+        }
+    });
 
-let mediaClasses = document.getElementsByClassName("media");
-
+    mediaElement.addEventListener('mouseout', () => {
+        const textElement = mediaElement.querySelector('.media-text');
+        if (textElement) {
+            textElement.classList.remove('fadeInM');
+            textElement.classList.add('fadeOutM');
+        }
+    });
+});
