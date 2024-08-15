@@ -113,7 +113,7 @@
 .positions-title {
   font-size: 2rem;
   color: var(--color-4);
-  max-height: 250px;
+  max-height: 300px;
 }
 
 .positions-title h1 {
@@ -167,6 +167,18 @@
   font-size: 1rem;
   margin: 25px;
 }
+
+/* not available positions: change display to none. */
+
+.job-2,
+.job-3,
+.job-4,
+.job-5,
+.job-6 {
+  display: block;
+}
+
+/* == */
 
 /* contacts */
 .contacts-title {
@@ -250,6 +262,9 @@
   .positions-title {
     font-size: 1.5rem;
   }
+  .positions-title p {
+    margin: 25px 25px 0px 25px;
+  }
   .contacts-title {
     font-size: 1.5rem;
   }
@@ -311,8 +326,16 @@
   .positions {
     margin: 25px;
   }
-  .positions-title h1 {
-    font-size: 1.5rem;
+  .positions-title {
+    font-size: 1rem;
+  }
+  .card {
+    max-width: 300px;
+    max-height: 525px;
+  }
+  .card img {
+    max-width: 300px;
+    max-height: 300px;
   }
   .contacts-title h1 {
     font-size: 1.25rem;
