@@ -36,12 +36,23 @@ function topFunction() {
 }
 
 // navbar display
+let navbarOpen = false;
 let navbarMobile = document.getElementsByClassName("navbar-mobile")[0];
+
 function toggleNavbar() {
-    if (navbarMobile.style.display === "none") {
+    if (navbarOpen === false) {
         navbarMobile.style.display = "block";
+        navbarMobile.classList.add("swipeToLeft");
+
+        navbarOpen = true;
     } else {
-        navbarMobile.style.display = "none";
+        navbarMobile.classList.add("fadeAway");
+        setTimeout(() => {
+            navbarMobile.style.display = "none";
+            navbarMobile.classList.remove("fadeAway");
+        }, 500);
+
+        navbarOpen = false;
     }
 }
 

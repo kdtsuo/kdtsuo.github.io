@@ -370,3 +370,42 @@
     border-radius: 0px;
   }
 }
+
+@keyframes swipeToLeft {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.swipeToLeft {
+  animation: swipeToLeft 0.5s ease forwards;
+}
+
+@keyframes swipeToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+.swipeToRight {
+  animation: swipeToRight 0.5s ease forwards;
+}
+
+@keyframes fadeAway {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeAway {
+  animation: fadeAway 0.25s ease forwards;
+}
