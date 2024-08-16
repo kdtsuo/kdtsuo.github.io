@@ -6,7 +6,7 @@
 .home-info {
   font-size: 1rem;
   text-align: center;
-  color: var(--color-2);
+  color: var(--color-7);
 }
 .home-info h1 {
   margin: 15px;
@@ -115,7 +115,7 @@
   color: var(--color-4);
 }
 .about-description p {
-  color: var(--color-2);
+  color: var(--color-7);
 }
 
 .portfolio {
@@ -130,7 +130,7 @@
 
 .portfolio p {
   margin: 25px;
-  color: var(--color-2);
+  color: var(--color-7);
 }
 
 .portfolio-container {
@@ -168,7 +168,7 @@
 
 .media-text h1 {
   margin: 0px;
-  color: var(--color-2);
+  color: var(--color-7);
 }
 .media-text p {
   margin: 0px;
@@ -203,7 +203,7 @@
 }
 
 .positions-title p {
-  color: var(--color-2);
+  color: var(--color-7);
   max-width: 800px;
   max-height: 250px;
   margin: 25px 25px 25px 25px;
@@ -257,7 +257,7 @@
   transition: color 0.25s ease;
 }
 .card a:hover {
-  color: var(--color-2);
+  color: var(--color-7);
 }
 
 /* not available positions: change display to none. */
@@ -316,7 +316,7 @@
 .farewell-title {
   font-size: 1rem;
   text-align: center;
-  color: var(--color-2);
+  color: var(--color-7);
 }
 /* == */
 
@@ -470,6 +470,7 @@
     font-size: var(--midTS);
   }
   .portfolio p {
+    font-size: var(--smallTS);
     margin: 0px 25px 25px 25px;
   }
   .portfolio-container {
@@ -482,6 +483,7 @@
     font-size: var(--midTS);
   }
   .positions p {
+    font-size: var(--smallTS);
     margin: 0px 25px;
   }
   .card {
