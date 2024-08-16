@@ -351,6 +351,14 @@
   }
 }
 
+.fadeInM {
+  animation: fadeInM 0.5s forwards;
+}
+
+.fadeOutM {
+  animation: fadeOutM 0.5s forwards;
+}
+
 @keyframes borderRound {
   0% {
     border-radius: 0px;

@@ -15,7 +15,7 @@ document.querySelectorAll('.media').forEach(mediaElement => {
         }
     });
 });
-// button
+// up button
 let upButton = document.getElementById("upButton");
 
 window.onscroll = function () {
@@ -24,9 +24,10 @@ window.onscroll = function () {
 
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        upButton.style.display = "block"; // Added quotes around block
+        upButton.style.display = "block";
+
     } else {
-        upButton.style.display = "none"; // Added quotes around none
+        upButton.style.display = "none";
     }
 }
 
