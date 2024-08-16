@@ -257,7 +257,7 @@
   transition: color 0.25s ease;
 }
 .card a:hover {
-  color: var(--color-7);
+  color: var(--color-2);
 }
 
 /* not available positions: change display to none. */
