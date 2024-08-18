@@ -141,6 +141,7 @@
   border-left: 6px solid var(--color-4);
   height: 600px;
   margin: 0px 38px 38px 38px;
+  z-index: 1;
 }
 .whatwedo-container {
   font-size: var(--textSize);
@@ -163,9 +164,19 @@
   color: var(--color-4);
   border-radius: 15px;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
+  z-index: 1;
+}
+
+.whatwedo-1 img:hover {
+  animation: hoverZoomInHalf 0.25s ease forwards;
+}
+
+.whatwedo-1 img:not(:hover) {
+  animation: hoverZoomOutHalf 0.25s ease forwards;
 }
 .whatwedo-1-description {
   max-width: 700px;
+  z-index: 2;
 }
 
 .whatwedo-1-description h1 {
@@ -187,6 +198,15 @@
   color: var(--color-4);
   border-radius: 15px;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
+  z-index: 1;
+}
+
+.whatwedo-2 img:hover {
+  animation: hoverZoomInHalf 0.25s ease forwards;
+}
+
+.whatwedo-2 img:not(:hover) {
+  animation: hoverZoomOutHalf 0.25s ease forwards;
 }
 .number-label-2 {
   margin: 0px 25px 0px 25px;
@@ -201,6 +221,7 @@
 
 .whatwedo-2-description {
   max-width: 700px;
+  z-index: 2;
 }
 
 .whatwedo-2-description h1 {
@@ -360,12 +381,11 @@
   color: var(--color-2);
 }
 
-/* not available positions: change display to none. */
+/* not available positions: change filter grayscale value. */
 
 .job-4,
 .job-5,
 .job-6 {
-  display: block;
   filter: grayscale(50%);
 }
 
