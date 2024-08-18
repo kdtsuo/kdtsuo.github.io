@@ -8,21 +8,22 @@ document.querySelectorAll('.media').forEach(mediaElement => {
         }
         mediaElement.classList.remove('nudgeDown');
         mediaElement.classList.add('nudgeUp');
-        imgElement.classList.remove('brightOut');
+        imgElement.classList.remove('brightIn');
         imgElement.classList.add('brightOut');
 
     });
 
     mediaElement.addEventListener('mouseout', () => {
         const textElement = mediaElement.querySelector('.media-text');
+        const imgElement = mediaElement.querySelector('.media img');
         if (textElement) {
             textElement.classList.remove('fadeInM');
             textElement.classList.add('fadeOutM');
         }
         mediaElement.classList.remove('nudgeUp');
         mediaElement.classList.add('nudgeDown');
-        imgElement.classList.remove('brightIn');
-        imgElement.classList.add('brightOut');
+        imgElement.classList.remove('brightOut');
+        imgElement.classList.add('brightIn');
     });
 });
 
