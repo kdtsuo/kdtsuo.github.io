@@ -169,24 +169,33 @@
 }
 
 @keyframes nudgeUp {
-  0% {
+  from {
     transform: translateY(0);
   }
 
-  100% {
+  to {
     transform: translateY(-25px);
   }
 }
 
 @keyframes nudgeDown {
-  0% {
+  from {
     transform: translateY(-25px);
   }
 
-  100% {
+  to {
     transform: translateY(0);
   }
 }
+
+.nudgeUp {
+  animation: nudgeUp 0.25s ease forwards;
+}
+
+.nudgeDown {
+  animation: nudgeDown 0.25s ease forwards;
+}
+
 @keyframes nudgeUpHalf {
   0% {
     transform: translateY(0);
@@ -266,11 +275,11 @@
   }
 }
 .fadeInM {
-  animation: fadeIn 0.25s ease forwards;
+  animation: fadeInM 0.25s ease forwards;
 }
 
 .fadeOutM {
-  animation: fadeOut 0.25s ease forwards;
+  animation: fadeOutM 0.25s ease forwards;
 }
 
 @keyframes fadeInM {
@@ -289,14 +298,6 @@
   to {
     opacity: 0;
   }
-}
-
-.fadeInM {
-  animation: fadeInM 0.5s forwards;
-}
-
-.fadeOutM {
-  animation: fadeOutM 0.5s forwards;
 }
 
 @keyframes borderRound {
@@ -356,4 +357,30 @@
 
 .fadeAway {
   animation: fadeAway 0.25s ease forwards;
+}
+
+@keyframes brightOut {
+  0% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(0.5);
+  }
+}
+
+@keyframes brightIn {
+  0% {
+    filter: brightness(0.5);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.brightIn {
+  animation: brightIn 0.25s ease forwards;
+}
+
+.brightOut {
+  animation: brightOut 0.25s ease forwards;
 }

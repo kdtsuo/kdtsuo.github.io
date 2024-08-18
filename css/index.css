@@ -223,13 +223,15 @@
 }
 
 .portfolio h1 {
-  color: var(--color-4);
   margin: 0px;
+  color: var(--color-4);
+  font-size: var(--XTS);
 }
 
 .portfolio p {
   margin: 25px;
   color: var(--color-7);
+  font-size: var(--midTS);
 }
 
 .portfolio-container {
@@ -267,19 +269,22 @@
 
 .media-text h1 {
   margin: 0px;
-  color: var(--color-7);
+  color: var(--color-3);
 }
 .media-text p {
+  color: var(--color-5);
   margin: 0px;
 }
 
-.media:hover {
-  animation: fadeOutHalf 0.25s ease forwards, nudgeUp 0.25s ease forwards;
+/*  make the texts opacity to 1 */
+
+/* .media:hover {
+  animation: brightIn 0.25s ease forwards, nudgeUp 0.25s ease forwards;
 }
 
 .media:not(:hover) {
-  animation: fadeInHalf 0.25s ease forwards, nudgeDown 0.25s ease forwards;
-}
+  animation: brightOut 0.25s ease forwards, nudgeDown 0.25s ease forwards;
+} */
 
 /* == */
 
