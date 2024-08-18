@@ -359,6 +359,7 @@
 .card a {
   color: var(--color-4);
   transition: color 0.25s ease;
+  text-decoration: none;
 }
 .card a:hover {
   color: var(--color-2);
