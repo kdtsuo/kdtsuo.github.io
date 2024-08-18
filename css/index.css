@@ -1,4 +1,6 @@
 :root {
+  /* text size vars (apply to the element only. */
+  --XTS: 3rem;
   --textSize: 2rem;
   --midTS: 1.5rem;
   --smallTS: 1rem;
@@ -109,7 +111,7 @@
 .about-description {
   margin: 25px;
   max-width: 600px;
-  font-size: 1.5rem;
+  font-size: var(--midTS);
 }
 .about-description {
   color: var(--color-4);
@@ -117,6 +119,103 @@
 .about-description p {
   color: var(--color-7);
 }
+/* == */
+
+/* what we do */
+
+.whatwedo {
+  margin: 50px 50px 0px 50px;
+}
+
+.whatwedo-title {
+  font-size: var(--textSize);
+}
+
+.whatwedo-title h1 {
+  color: var(--color-4);
+  margin: 0px;
+}
+
+/* == */
+.vl {
+  border-left: 6px solid var(--color-4);
+  height: 600px;
+  margin: 0px 38px 38px 38px;
+}
+.whatwedo-container {
+  font-size: var(--textSize);
+}
+
+.whatwedo-1-content-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.number-label-1 {
+  margin: 0px 25px 0px 25px;
+  color: var(--color-7);
+}
+
+.whatwedo-1 img {
+  margin: 50px 25px;
+  max-width: 900px;
+  max-height: 500px;
+  color: var(--color-4);
+}
+.whatwedo-1-description {
+  max-width: 700px;
+}
+
+.whatwedo-1-description h1 {
+  margin: 50px 25px 25px 25px;
+  color: var(--color-4);
+  font-size: var(--XTS);
+}
+
+.whatwedo-1-description p {
+  margin: 25px;
+  color: var(--color-7);
+  font-size: var(--midTS);
+}
+
+.whatwedo-2 img {
+  margin: 50px 25px;
+  max-width: 900px;
+  max-height: 500px;
+  color: var(--color-4);
+}
+.number-label-2 {
+  margin: 0px 25px 0px 25px;
+  color: var(--color-7);
+  text-align: right;
+}
+.whatwedo-2-content-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.whatwedo-2-description {
+  max-width: 700px;
+}
+
+.whatwedo-2-description h1 {
+  margin: 50px 25px 25px 25px;
+  color: var(--color-4);
+  font-size: var(--XTS);
+  text-align: right;
+}
+
+.whatwedo-2-description p {
+  margin: 25px;
+  color: var(--color-7);
+  font-size: var(--midTS);
+  text-align: right;
+}
+
+/* == */
+
+/* portfolio */
 
 .portfolio {
   font-size: var(--textSize);
@@ -326,7 +425,7 @@
     font-size: var(--midTS);
   }
   .about-container {
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 25px 50px;
   }
@@ -337,17 +436,38 @@
   }
   .about-title {
     margin: 25px;
-    font-size: var(--midTS);
   }
   .about-content img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 900px;
+    max-height: 900px;
     margin: auto;
   }
   .about-description {
-    max-width: 500px;
+    font-size: var(--midTS);
+    max-width: 900px;
     margin: 50px;
   }
+
+  .whatwedo-1 img {
+    margin: 50px 25px;
+    max-width: 800px;
+    max-height: 400px;
+    color: var(--color-4);
+  }
+
+  .vl {
+    border-left: 6px solid var(--color-4);
+    height: 500px;
+    margin: 0px 38px 38px 38px;
+  }
+
+  .whatwedo-2 img {
+    margin: 50px 25px;
+    max-width: 800px;
+    max-height: 400px;
+    color: var(--color-4);
+  }
+
   .portfolio {
     font-size: var(--midTS);
   }
@@ -355,8 +475,8 @@
     margin: 25px;
   }
   .media img {
-    max-width: 600px;
-    max-height: 880px;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .media-text {
@@ -394,55 +514,126 @@
     padding: 0px;
   }
   .home-slider-wrapper {
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 95%;
+    max-height: 95%;
   }
   .home-slider {
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
   }
   .home-title {
     margin: 25px;
-  }
-  .home-title h1 {
-    font-size: 1.5rem;
+    font-size: var(--smallTS);
   }
   .about-title {
     margin: 25px 25px 25px 25px;
+    font-size: var(--smallTS);
   }
+
   .about-title h1 {
     margin: 0;
-    font-size: 1.5rem;
     text-align: left;
   }
   .about-container {
-    margin: 0 25px 25px;
+    margin: 0 15px 0px 15px;
     flex-wrap: wrap;
     justify-content: center;
   }
   .about-content img {
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 92%;
+    max-height: 95%;
     margin: 0 25px 25px;
   }
   .about-description {
     max-width: 430;
     max-height: 430;
-    margin: 25px;
+    margin: 15px;
   }
   .about-description h1 {
     margin-top: 0px;
-    font-size: 1.25rem;
+    font-size: var(--textSize);
+    text-align: center;
   }
   .about-description p {
-    font-size: 1rem;
+    font-size: var(--smallTS);
   }
-  .media {
+
+  .whatwedo {
     margin: 25px;
   }
 
+  .whatwedo-title h1 {
+    font-size: var(--midTS);
+  }
+
+  .vl {
+    /* become horizontal instead */
+    border-left: 0px;
+    border-top: 3px solid var(--color-4);
+    width: 100%;
+    height: 0px;
+    margin: 15px;
+  }
+
+  .number-label-1 {
+    margin: 0px 15px 0px 15px;
+    color: var(--color-7);
+    text-align: center;
+    font-size: var(--textSize);
+  }
+
+  .whatwedo-1-content-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .whatwedo-1 img {
+    margin: 15px 15px;
+    max-width: 93%;
+    max-height: 93%;
+  }
+
+  .whatwedo-1-description h1 {
+    font-size: var(--textSize);
+    margin: 15px;
+    text-align: center;
+  }
+
+  .whatwedo-1-description p {
+    font-size: var(--smallTS);
+  }
+
+  .whatwedo-2 img {
+    margin: 15px 15px;
+    max-width: 93%;
+    max-height: 93%;
+  }
+
+  .number-label-2 {
+    margin: 0px 25px 0px 25px;
+    color: var(--color-7);
+    font-size: var(--textSize);
+    text-align: center;
+  }
+
+  .whatwedo-2-description h1 {
+    font-size: var(--textSize);
+    margin: 15px;
+    text-align: center;
+  }
+
+  .whatwedo-2-description p {
+    font-size: var(--smallTS);
+    text-align: left;
+  }
+
+  .media {
+    margin: 15px;
+  }
+
   .media img {
-    max-width: 350px;
-    max-height: 400px;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .media-text {
@@ -457,34 +648,38 @@
   }
 
   .media-text h1 {
-    font-size: 1rem;
+    font-size: var(--midTS);
   }
   .media-text p {
-    font-size: 1rem;
+    font-size: var(--smallTS);
   }
 
   .portfolio {
-    margin: 25px;
+    margin: 15px;
   }
   .portfolio-title h1 {
-    font-size: var(--midTS);
+    font-size: var(--textSize);
   }
   .portfolio p {
     font-size: var(--smallTS);
-    margin: 0px 25px 25px 25px;
+    margin: 15px;
   }
   .portfolio-container {
     margin: 0px;
   }
   .positions {
-    margin: 25px 25px 0px 25px;
+    margin: 15px;
+  }
+
+  .positions-title {
+    margin: 15px;
   }
   .positions-title h1 {
     font-size: var(--midTS);
   }
   .positions p {
     font-size: var(--smallTS);
-    margin: 0px 25px;
+    margin: 15px;
   }
   .card {
     max-width: 300px;

@@ -83,3 +83,22 @@ window.addEventListener("scroll", () => {
 
     scrollTimeout = setTimeout(handleNavbarFade, 1);
 });
+
+
+const pictures = document.getElementsByClassName('picture');
+
+function toggleZoom(event) {
+    const picture = event.target;
+    if (picture.classList.contains('pictureZoomIn')) {
+        picture.classList.remove('pictureZoomIn');
+        picture.classList.add('pictureZoomOut');
+    } else {
+        picture.classList.remove('pictureZoomOut');
+        picture.classList.add('pictureZoomIn');
+    }
+}
+
+// Attach the function to the click event for each picture
+for (let i = 0; i < pictures.length; i++) {
+    pictures[i].addEventListener('click', toggleZoom);
+}
