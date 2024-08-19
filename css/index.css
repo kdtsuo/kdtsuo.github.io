@@ -767,6 +767,7 @@
     width: 80%;
     height: 90%;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
   }
 
@@ -774,26 +775,26 @@
     align-self: center;
     max-width: 100%;
     max-height: 50%;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 10px 10px 10px;
   }
   .home-popup-description {
     align-self: center;
     max-width: 90%;
-    margin: 0px;
+    margin: 10px;
   }
 
   .home-popup-description h1 {
     font-size: var(--smallTS);
-    margin: 0px;
-  }
-
-  .home-popup-close {
-    display: none;
+    margin: 10px;
   }
 
   .home-popup-description p {
     font-size: var(--smallTS);
-    margin: 0px;
+    margin: 20px;
+  }
+
+  .home-popup-close {
+    display: none;
   }
 
   .home-popup-links {
