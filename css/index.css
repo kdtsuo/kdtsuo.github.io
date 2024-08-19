@@ -628,6 +628,10 @@
     flex-wrap: wrap;
   }
 
+  .home-popup-close {
+    display: none;
+  }
+
   .about-title {
     margin: 25px;
   }
