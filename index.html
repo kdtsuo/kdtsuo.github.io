@@ -136,7 +136,7 @@
         <section class="home-container">
             <!-- content slider -->
             <div class="home-slider-wrapper">
-                <div class="home-slider">
+                <div class="home-slider" id="home-slider">
                     <img id="home-slide-1" src="imgs/media.png">
                     <img id="home-slide-2" src="imgs/1.png">
                     <img id="home-slide-3" src="imgs/2.png">
@@ -146,6 +146,7 @@
                     <img id="home-slide-7" src="imgs/6.png">
                 </div>
                 <div class="home-slider-nav">
+                    <div class="home-slider-prev" onclick="prevSlide()">&#10094;</div>
                     <a href="#home-slide-1"></a>
                     <a href="#home-slide-2"></a>
                     <a href="#home-slide-3"></a>
@@ -153,10 +154,12 @@
                     <a href="#home-slide-5"></a>
                     <a href="#home-slide-6"></a>
                     <a href="#home-slide-7"></a>
+                    <div class="home-slider-next" onclick="nextSlide()">&#10095;</div>
                 </div>
-            </div>
 
+            </div>
         </section>
+
     </div>
 
     <div class="about" id="about">

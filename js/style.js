@@ -1,3 +1,122 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.home-slider');
+    const slides = document.querySelectorAll('.home-slider img');
+    const navAnchors = document.querySelectorAll('.home-slider-nav a');
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    let autoSlideInterval;
+    let inactivityTimeout;
+
+    // Function to go to a specific slide
+    function goToSlide(index) {
+        slider.scrollTo({
+            left: slider.clientWidth * index,
+            behavior: 'smooth'
+        });
+        updateNavAnchors(index);
+    }
+
+    // Function to start the auto-slide
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+            currentIndex++;
+            if (currentIndex >= totalSlides) {
+                currentIndex = 0; // Loop back to the first slide
+            }
+            goToSlide(currentIndex);
+        }, 3000); // Change slide every 3 seconds
+    }
+
+    // Function to stop the auto-slide
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+
+    // Function to reset inactivity timeout
+    function resetInactivityTimeout() {
+        clearTimeout(inactivityTimeout);
+        inactivityTimeout = setTimeout(() => {
+            startAutoSlide(); // Resume auto-slide after 3 seconds of inactivity
+        }, 3000); // 3 seconds of inactivity
+    }
+
+    // Function to update the currentIndex based on the user's scroll position
+    function updateCurrentIndex() {
+        currentIndex = Math.round(slider.scrollLeft / slider.clientWidth);
+        updateNavAnchors(currentIndex);
+    }
+
+    // Function to update the opacity of navigation anchors
+    function updateNavAnchors(index) {
+        navAnchors.forEach((anchor, i) => {
+            anchor.style.opacity = i === index ? '1' : '0.25';
+        });
+    }
+
+    // Start auto-slide initially
+    startAutoSlide();
+
+    // Highlight the first anchor on page load
+    updateNavAnchors(currentIndex);
+
+    // Add event listeners to pause auto-slide on user interaction
+    slider.addEventListener('scroll', () => {
+        stopAutoSlide();
+        resetInactivityTimeout();
+        updateCurrentIndex(); // Update currentIndex to user's current position
+    });
+
+    slider.addEventListener('mousedown', () => {
+        stopAutoSlide();
+        updateCurrentIndex();
+    });
+
+    slider.addEventListener('mouseup', resetInactivityTimeout);
+    slider.addEventListener('touchstart', () => {
+        stopAutoSlide();
+        updateCurrentIndex();
+    });
+
+    slider.addEventListener('touchend', resetInactivityTimeout);
+
+    // Restart auto-slide if the user scrolls and stops
+    slider.addEventListener('scrollend', resetInactivityTimeout);
+});
+
+
+// prevSlide()
+// nextSlide()
+
+function prevSlide() {
+    const slider = document.querySelector('.home-slider');
+    const slides = document.querySelectorAll('.home-slider img');
+    let currentIndex = Math.round(slider.scrollLeft / slider.clientWidth);
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = slides.length - 1;
+    }
+    slider.scrollTo({
+        left: slider.clientWidth * currentIndex,
+        behavior: 'smooth'
+    });
+}
+
+function nextSlide() {
+    const slider = document.querySelector('.home-slider');
+    const slides = document.querySelectorAll('.home-slider img');
+    let currentIndex = Math.round(slider.scrollLeft / slider.clientWidth);
+    currentIndex++;
+    if (currentIndex >= slides.length) {
+        currentIndex = 0;
+    }
+    slider.scrollTo({
+        left: slider.clientWidth * currentIndex,
+        behavior: 'smooth'
+    });
+}
+
+
+// portfolio hover effect
 document.querySelectorAll('.media').forEach(mediaElement => {
     mediaElement.addEventListener('mouseover', () => {
         const textElement = mediaElement.querySelector('.media-text');
