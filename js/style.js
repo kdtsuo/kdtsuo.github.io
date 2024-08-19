@@ -248,3 +248,50 @@ function toggleZoom(event) {
 for (let i = 0; i < pictures.length; i++) {
     pictures[i].addEventListener('click', toggleZoom);
 }
+
+
+//popup
+let popup = document.getElementsByClassName("home-popup")[0];
+let alreadyClosed = false;
+
+function openPopup() {
+    if (popup.style.display === "none" || popup.style.display === "") {
+        popup.style.display = "block";
+        popup.classList.remove("fadeOutM");
+        popup.classList.add("fadeInM");
+        alreadyClosed = false;
+    }
+}
+
+function closePopup() {
+    if (popup.style.display === "block") {
+        popup.classList.remove("fadeInM");
+        popup.classList.add("fadeOutM");
+        popup.addEventListener('animationend', function () {
+            if (popup.classList.contains('fadeOutM')) {
+                popup.style.display = "none";
+                alreadyClosed = true;
+            }
+        }, { once: true });
+    }
+}
+window.onkeydown = function (event) {
+    if (event.key === "Escape") {
+        closePopup();
+    }
+};
+
+window.onscroll = function () {
+    if (!alreadyClosed) {
+        closePopup();
+    }
+};
+window.onresize = function () {
+    if (!alreadyClosed) {
+        closePopup();
+    }
+};
+
+
+
+

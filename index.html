@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -137,13 +137,14 @@
             <!-- content slider -->
             <div class="home-slider-wrapper">
                 <div class="home-slider" id="home-slider">
-                    <img id="home-slide-1" src="imgs/media.png">
-                    <img id="home-slide-2" src="imgs/1.png">
-                    <img id="home-slide-3" src="imgs/2.png">
-                    <img id="home-slide-4" src="imgs/3.png">
-                    <img id="home-slide-5" src="imgs/4.png">
-                    <img id="home-slide-6" src="imgs/5.png">
-                    <img id="home-slide-7" src="imgs/6.png">
+
+                    <img onclick="openPopup()" id="home-slide-1" src="imgs/announcements/ssx2.png">
+                    <img id="home-slide-2" src="imgs/announcements/ann.png">
+                    <img id="home-slide-3" src="imgs/announcements/ann.png">
+                    <img id="home-slide-4" src="imgs/announcements/ann.png">
+                    <img id="home-slide-5" src="imgs/announcements/ann.png">
+                    <img id="home-slide-6" src="imgs/announcements/ann.png">
+                    <img id="home-slide-7" src="imgs/announcements/ann.png">
                 </div>
                 <div class="home-slider-nav">
                     <div class="home-slider-prev" onclick="prevSlide()">&#10094;</div>
@@ -156,10 +157,41 @@
                     <a href="#home-slide-7"></a>
                     <div class="home-slider-next" onclick="nextSlide()">&#10095;</div>
                 </div>
-
             </div>
         </section>
 
+    </div>
+
+    <div class="home-popup">
+        <div class="home-popup-container">
+            <div class="home-popup-close" onclick="closePopup()">&#10006;</div>
+            <img src="imgs/announcements/glowinthedark.jfif">
+
+            <div class="home-popup-description">
+
+                <h1>stereo sunday band okanagan summer concert tour 2024</h1>
+                <p>we will be performing as a special guest! come join us for a fun and musical night! tickets are
+                    available now!
+                    <br><br>
+                    <i class="fa fa-map-marker"></i> KELOWNA: Sun, Aug 25, 2024 6:00 PM - 10:00 PM (lasts 4 hours)
+
+                </p>
+                <div class="home-popup-links">
+                    <a target="_blank" href="https://www.facebook.com/stereosundayband/">
+                        <button>more </button>
+                    </a>
+                    <a target="_blank"
+                        href="https://www.eventbrite.com/e/stereo-sunday-band-okanagan-summer-concert-tour-2024-tickets-899373338867?utm_experiment=test_share_listing&aff=ebdsshios">
+                        <button>tickets </button>
+                    </a>
+                    <a onclick="closePopup()">
+                        <button>&#10006;</button>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
     </div>
 
     <div class="about" id="about">
