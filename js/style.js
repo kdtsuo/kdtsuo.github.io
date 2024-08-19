@@ -49,9 +49,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to update the opacity of navigation anchors
     function updateNavAnchors(index) {
         navAnchors.forEach((anchor, i) => {
-            anchor.style.opacity = i === index ? '1' : '0.25';
+            anchor.style.opacity = i === index ? '1' : '0.5';
         });
     }
+
+    // Handle click events on navigation anchors
+    navAnchors.forEach((anchor, i) => {
+        anchor.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default anchor behavior
+            stopAutoSlide(); // Stop the auto-slide when an anchor is clicked
+            goToSlide(i); // Go to the clicked slide
+            currentIndex = i; // Update the currentIndex to the clicked slide
+            resetInactivityTimeout(); // Start the inactivity timeout to resume auto-slide
+        });
+    });
 
     // Start auto-slide initially
     startAutoSlide();
@@ -82,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Restart auto-slide if the user scrolls and stops
     slider.addEventListener('scrollend', resetInactivityTimeout);
 });
+
 
 
 // prevSlide()
