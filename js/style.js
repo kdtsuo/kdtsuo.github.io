@@ -1,3 +1,26 @@
+// // Get all elements with the class 'fadein'
+// const fadeInElements = document.querySelectorAll('.fadein');
+
+// // Set opacity to 0 for all elements with the class 'fadein'
+// fadeInElements.forEach(element => {
+//     element.style.opacity = '0';
+// });
+
+// // Function to add 'fadeInM' class with a delay
+// const addClassWithDelay = (element, delay) => {
+//     setTimeout(() => {
+//         element.classList.add('fadeInM');
+//     }, delay);
+// };
+
+// // Add the 'fadeInM' class to each element with a delay of 0.25 seconds between each
+// fadeInElements.forEach((element, index) => {
+//     addClassWithDelay(element, index * 250); // 250ms = 0.25s delay
+// });
+
+
+
+
 // document.addEventListener('DOMContentLoaded', function () {
 //     const slider = document.querySelector('.home-slider');
 //     const slides = document.querySelectorAll('.home-slider img');
@@ -291,6 +314,7 @@ for (let i = 0; i < pictures.length; i++) {
 //         closePopup();
 //     }
 // };
+
 
 
 
