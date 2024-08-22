@@ -18,6 +18,8 @@ body {
   background-color: var(--color-1);
   font-family: var(--font-body);
   overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* nav bar */
