@@ -1,5 +1,6 @@
 :root {
   /* text size vars (apply to the element only. */
+  --XXTS: 4rem;
   --XTS: 3rem;
   --textSize: 2rem;
   --midTS: 1.5rem;
@@ -29,7 +30,8 @@
 
 /* image slider for home */
 .home-container {
-  padding: 50px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .home-slider-wrapper {
@@ -54,17 +56,6 @@
   scroll-snap-align: start;
   object-fit: cover;
   cursor: pointer;
-}
-
-/* grayscale all inactive sliders. */
-#home-slide-2,
-#home-slide-3,
-#home-slide-4,
-#home-slide-5,
-#home-slide-6,
-#home-slide-7 {
-  filter: grayscale(50%);
-  filter: brightness(25%);
 }
 
 .home-slider a {
@@ -404,7 +395,7 @@
 .portfolio h1 {
   margin: 0px;
   color: var(--color-4);
-  font-size: var(--XTS);
+  font-size: var(--XXTS);
 }
 
 .portfolio p {
