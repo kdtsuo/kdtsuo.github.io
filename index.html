@@ -164,37 +164,6 @@
 
     </div>
 
-    <!-- <div class="home-popup">
-        <div class="home-popup-container">
-            <div class="home-popup-close" onclick="closePopup()">&#10006;</div>
-            <img src="imgs/announcements/glowinthedark.jfif">
-
-            <div class="home-popup-description">
-
-                <h1>glow in the dark concert by stereo sunday band</h1>
-                <p>
-                    we will be performing as a special guest! come join us for a fun and musical night! tickets are
-                    available now!
-                    <br><i class="fa fa-map-marker"></i> KELOWNA: Sun, Aug 25, 2024 6:00 PM - 10:00 PM (lasts 4 hours)
-                </p>
-                <div class="home-popup-links">
-                    <a target="_blank" href="https://www.facebook.com/stereosundayband/">
-                        <button>more </button>
-                    </a>
-                    <a target="_blank"
-                        href="https://www.eventbrite.com/e/stereo-sunday-band-okanagan-summer-concert-tour-2024-tickets-899373338867?utm_experiment=test_share_listing&aff=ebdsshios">
-                        <button>tickets </button>
-                    </a>
-                    <a onclick="closePopup()">
-                        <button>close</button>
-                    </a>
-                </div>
-
-
-            </div>
-        </div>
-    </div> -->
-
     <div class="about" id="about">
 
         <div class="about-title">
@@ -272,28 +241,30 @@
 
             <div class="portfolio-container">
                 <div class="media portfolio-media-1">
-                    <section class="home-container">
-                        <div class="home-slider-wrapper">
-                            <div class="home-slider" id="home-slider">
+                    <section class="slidecontainer container-1">
+                        <div class="slidewrapper wrapper-1">
+                            <div class="slider slider-1" id="home-slider">
 
-                                <img id="home-slide-1" src="imgs/team/udcevents/cropped-DSC_0107.jpeg">
-                                <img id="home-slide-2" src="imgs/team/udcevents/cropped-DSC_0652-2.jpeg">
-                                <img id="home-slide-3" src="imgs/media.png">
-                                <img id="home-slide-4" src="imgs/media.png">
-                                <img id="home-slide-5" src="imgs/media.png">
-                                <img id="home-slide-6" src="imgs/media.png">
-                                <img id="home-slide-7" src="imgs/media.png">
+                                <img id="slide-1" src="imgs/team/udcevents/cropped-DSC_0107.jpeg">
+                                <img id="slide-2" src="imgs/team/udcevents/cropped-DSC_0652-2.jpeg">
+                                <img id="slide-3" src="imgs/media.png">
+                                <img id="slide-4" src="imgs/media.png">
+                                <img id="slide-5" src="imgs/media.png">
+                                <img id="slide-6" src="imgs/media.png">
+                                <img id="slide-7" src="imgs/media.png">
                             </div>
-                            <div class="home-slider-nav">
-                                <div class="home-slider-prev" onclick="prevSlide()">&#10094;</div>
-                                <a href="#home-slide-1"></a>
-                                <a href="#home-slide-2"></a>
-                                <a href="#home-slide-3"></a>
-                                <a href="#home-slide-4"></a>
-                                <a href="#home-slide-5"></a>
-                                <a href="#home-slide-6"></a>
-                                <a href="#home-slide-7"></a>
-                                <div class="home-slider-next" onclick="nextSlide()">&#10095;</div>
+                            <div class="slidernav slider-nav-1">
+                                <div class="sliderprev slider-prev-1" onclick="prevSlide('.slider', '.slider img')">
+                                    &#10094;</div>
+                                <a href="#slide-1"></a>
+                                <a href="#slide-2"></a>
+                                <a href="#slide-3"></a>
+                                <a href="#slide-4"></a>
+                                <a href="#slide-5"></a>
+                                <a href="#slide-6"></a>
+                                <a href="#slide-7"></a>
+                                <div class="slidernext slider-next-1" onclick="nextSlide('.slider', '.slider img')">
+                                    &#10095;</div>
                             </div>
                         </div>
                     </section>

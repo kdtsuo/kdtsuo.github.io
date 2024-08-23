@@ -1,36 +1,41 @@
-// // Get all elements with the class 'fadein'
-// const fadeInElements = document.querySelectorAll('.fadein');
+function prevSlide(sliderSelector, slidesSelector) {
+    const slider = document.querySelector(sliderSelector);
+    const slides = document.querySelectorAll(slidesSelector);
+    let currentIndex = Math.round(slider.scrollLeft / slider.clientWidth);
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = slides.length - 1;
+    }
+    slider.scrollTo({
+        left: slider.clientWidth * currentIndex,
+        behavior: 'smooth'
+    });
+}
 
-// // Set opacity to 0 for all elements with the class 'fadein'
-// fadeInElements.forEach(element => {
-//     element.style.opacity = '0';
-// });
+function nextSlide(sliderSelector, slidesSelector) {
+    const slider = document.querySelector(sliderSelector);
+    const slides = document.querySelectorAll(slidesSelector);
+    let currentIndex = Math.round(slider.scrollLeft / slider.clientWidth);
+    currentIndex++;
+    if (currentIndex >= slides.length) {
+        currentIndex = 0;
+    }
+    slider.scrollTo({
+        left: slider.clientWidth * currentIndex,
+        behavior: 'smooth'
+    });
+}
 
-// // Function to add 'fadeInM' class with a delay
-// const addClassWithDelay = (element, delay) => {
-//     setTimeout(() => {
-//         element.classList.add('fadeInM');
-//     }, delay);
-// };
-
-// // Add the 'fadeInM' class to each element with a delay of 0.25 seconds between each
-// fadeInElements.forEach((element, index) => {
-//     addClassWithDelay(element, index * 250); // 250ms = 0.25s delay
-// });
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const slider = document.querySelector('.home-slider');
-    const slides = document.querySelectorAll('.home-slider img');
-    const navAnchors = document.querySelectorAll('.home-slider-nav a');
+function slider(sliderSelector, slidesSelector, navAnchorsSelector) {
+    const slider = document.querySelector(sliderSelector);
+    const slides = document.querySelectorAll(slidesSelector);
+    const navAnchors = document.querySelectorAll(navAnchorsSelector);
     let currentIndex = 0;
     const totalSlides = slides.length;
     let autoSlideInterval;
     let inactivityTimeout;
+    let scrollTimeout;
 
-    // Function to go to a specific slide
     function goToSlide(index) {
         slider.scrollTo({
             left: slider.clientWidth * index,
@@ -39,65 +44,59 @@ document.addEventListener('DOMContentLoaded', function () {
         updateNavAnchors(index);
     }
 
-    // Function to start the auto-slide
     function startAutoSlide() {
         autoSlideInterval = setInterval(() => {
             currentIndex++;
             if (currentIndex >= totalSlides) {
-                currentIndex = 0; // Loop back to the first slide
+                currentIndex = 0;
             }
             goToSlide(currentIndex);
-        }, 3000); // Change slide every 3 seconds
+        }, 3000);
     }
 
-    // Function to stop the auto-slide
     function stopAutoSlide() {
         clearInterval(autoSlideInterval);
     }
 
-    // Function to reset inactivity timeout
     function resetInactivityTimeout() {
         clearTimeout(inactivityTimeout);
         inactivityTimeout = setTimeout(() => {
-            startAutoSlide(); // Resume auto-slide after 3 seconds of inactivity
-        }, 3000); // 3 seconds of inactivity
+            startAutoSlide();
+        }, 3000);
     }
 
-    // Function to update the currentIndex based on the user's scroll position
     function updateCurrentIndex() {
         currentIndex = Math.round(slider.scrollLeft / slider.clientWidth);
         updateNavAnchors(currentIndex);
     }
 
-    // Function to update the opacity of navigation anchors
     function updateNavAnchors(index) {
         navAnchors.forEach((anchor, i) => {
             anchor.style.opacity = i === index ? '1' : '0.5';
         });
     }
 
-    // Handle click events on navigation anchors
     navAnchors.forEach((anchor, i) => {
         anchor.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevent default anchor behavior
-            stopAutoSlide(); // Stop the auto-slide when an anchor is clicked
-            goToSlide(i); // Go to the clicked slide
-            currentIndex = i; // Update the currentIndex to the clicked slide
-            resetInactivityTimeout(); // Start the inactivity timeout to resume auto-slide
+            event.preventDefault();
+            stopAutoSlide();
+            goToSlide(i);
+            currentIndex = i;
+            resetInactivityTimeout();
         });
     });
 
-    // Start auto-slide initially
     startAutoSlide();
-
-    // Highlight the first anchor on page load
     updateNavAnchors(currentIndex);
-
-    // Add event listeners to pause auto-slide on user interaction
     slider.addEventListener('scroll', () => {
         stopAutoSlide();
-        resetInactivityTimeout();
-        updateCurrentIndex(); // Update currentIndex to user's current position
+        updateCurrentIndex();
+
+        // Detect the end of scroll
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            resetInactivityTimeout();
+        }, 100);
     });
 
     slider.addEventListener('mousedown', () => {
@@ -112,44 +111,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     slider.addEventListener('touchend', resetInactivityTimeout);
-
-    // Restart auto-slide if the user scrolls and stops
-    slider.addEventListener('scrollend', resetInactivityTimeout);
-});
-
-
-
-// prevSlide()
-// nextSlide()
-
-function prevSlide() {
-    const slider = document.querySelector('.home-slider');
-    const slides = document.querySelectorAll('.home-slider img');
-    let currentIndex = Math.round(slider.scrollLeft / slider.clientWidth);
-    currentIndex--;
-    if (currentIndex < 0) {
-        currentIndex = slides.length - 1;
-    }
-    slider.scrollTo({
-        left: slider.clientWidth * currentIndex,
-        behavior: 'smooth'
-    });
 }
-
-function nextSlide() {
-    const slider = document.querySelector('.home-slider');
-    const slides = document.querySelectorAll('.home-slider img');
-    let currentIndex = Math.round(slider.scrollLeft / slider.clientWidth);
-    currentIndex++;
-    if (currentIndex >= slides.length) {
-        currentIndex = 0;
-    }
-    slider.scrollTo({
-        left: slider.clientWidth * currentIndex,
-        behavior: 'smooth'
-    });
-}
-
+slider('.slider', '.slider img', '.slidernav a');
 
 // portfolio hover effect
 document.querySelectorAll('.media').forEach(mediaElement => {
@@ -180,9 +143,6 @@ document.querySelectorAll('.media').forEach(mediaElement => {
         imgElement.classList.add('brightIn');
     });
 });
-
-
-
 
 // up button
 let upButton = document.getElementById("upButton");
