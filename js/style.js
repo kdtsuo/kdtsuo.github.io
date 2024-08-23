@@ -127,40 +127,42 @@ const mediaImg = ".media img";
 
 document.querySelectorAll(".media").forEach((mediaElement) => {
   let isClicked = false;
-  let hasNotHover = true;
+  let clickedToTurnOff = false;
   // Handle hover effects
-  if (hasNotHover) {
-    mediaElement.addEventListener("mouseover", () => {
-      if (!isClicked) {
-        const textElement = mediaElement.querySelector(mediaText);
-        const imgElement = mediaElement.querySelector(mediaImg);
-        if (imgElement) {
-          textElement.classList.remove("fadeOutM");
-          textElement.classList.add("fadeInM");
-        }
-        mediaElement.classList.remove("nudgeDown");
-        mediaElement.classList.add("nudgeUp");
-        imgElement.classList.remove("brightIn");
-        imgElement.classList.add("brightOut");
+  mediaElement.addEventListener("mouseover", () => {
+    mediaElement.classList.remove("nudgeDown");
+    mediaElement.classList.add("nudgeUp");
+    if (!isClicked && !clickedToTurnOff) {
+      const textElement = mediaElement.querySelector(mediaText);
+      const imgElement = mediaElement.querySelector(mediaImg);
+      mediaElement.classList.remove("nudgeDown");
+      mediaElement.classList.add("nudgeUp");
+      if (imgElement) {
+        textElement.classList.remove("fadeOutM");
+        textElement.classList.add("fadeInM");
       }
-    });
 
-    mediaElement.addEventListener("mouseout", () => {
-      if (!isClicked) {
-        const textElement = mediaElement.querySelector(mediaText);
-        const imgElement = mediaElement.querySelector(mediaImg);
-        if (imgElement) {
-          textElement.classList.remove("fadeInM");
-          textElement.classList.add("fadeOutM");
-        }
-        mediaElement.classList.remove("nudgeUp");
-        mediaElement.classList.add("nudgeDown");
-        imgElement.classList.remove("brightOut");
-        imgElement.classList.add("brightIn");
-        hasNotHover = false;
+      imgElement.classList.remove("brightIn");
+      imgElement.classList.add("brightOut");
+    }
+  });
+
+  mediaElement.addEventListener("mouseout", () => {
+    mediaElement.classList.remove("nudgeUp");
+    mediaElement.classList.add("nudgeDown");
+    if (!isClicked) {
+      const textElement = mediaElement.querySelector(mediaText);
+      const imgElement = mediaElement.querySelector(mediaImg);
+
+      if (imgElement) {
+        textElement.classList.remove("fadeInM");
+        textElement.classList.add("fadeOutM");
       }
-    });
-  }
+
+      imgElement.classList.remove("brightOut");
+      imgElement.classList.add("brightIn");
+    }
+  });
 
   // Handle click to toggle effect
   mediaElement.addEventListener("click", (event) => {
@@ -188,6 +190,7 @@ document.querySelectorAll(".media").forEach((mediaElement) => {
         }
         imgElement.classList.remove("brightOut");
         imgElement.classList.add("brightIn");
+        clickedToTurnOff = true;
       }
     }
   });
