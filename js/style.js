@@ -26,7 +26,7 @@ function nextSlide(sliderSelector, slidesSelector) {
     });
 }
 
-function slider(sliderSelector, slidesSelector, navAnchorsSelector) {
+function slider(sliderSelector, slidesSelector, navAnchorsSelector, delay) {
     const slider = document.querySelector(sliderSelector);
     const slides = document.querySelectorAll(slidesSelector);
     const navAnchors = document.querySelectorAll(navAnchorsSelector);
@@ -51,7 +51,7 @@ function slider(sliderSelector, slidesSelector, navAnchorsSelector) {
                 currentIndex = 0;
             }
             goToSlide(currentIndex);
-        }, 3000);
+        }, delay);
     }
 
     function stopAutoSlide() {
@@ -62,7 +62,7 @@ function slider(sliderSelector, slidesSelector, navAnchorsSelector) {
         clearTimeout(inactivityTimeout);
         inactivityTimeout = setTimeout(() => {
             startAutoSlide();
-        }, 3000);
+        }, delay);
     }
 
     function updateCurrentIndex() {
@@ -112,8 +112,10 @@ function slider(sliderSelector, slidesSelector, navAnchorsSelector) {
 
     slider.addEventListener('touchend', resetInactivityTimeout);
 }
-slider('.slider-1', '.slider-1 img', '.slider-nav-1 a');
-slider('.slider-2', '.slider-2 img', '.slider-nav-2 a');
+slider('.slider-1', '.slider-1 img', '.slider-nav-1 a', 3000);
+slider('.slider-2', '.slider-2 img', '.slider-nav-2 a', 3500);
+slider('.slider-3', '.slider-3 img', '.slider-nav-3 a', 4000);
+slider('.slider-4', '.slider-4 img', '.slider-nav-4 a', 4500);
 
 // portfolio hover effect
 document.querySelectorAll('.media').forEach(mediaElement => {
@@ -228,55 +230,6 @@ function toggleZoom(event) {
     }
 }
 
-// Attach the function to the click event for each picture
 for (let i = 0; i < pictures.length; i++) {
     pictures[i].addEventListener('click', toggleZoom);
 }
-
-
-//popup
-// let popup = document.getElementsByClassName("home-popup")[0];
-// let alreadyClosed = false;
-
-// function openPopup() {
-//     if (popup.style.display === "none" || popup.style.display === "") {
-//         popup.style.display = "block";
-//         popup.classList.remove("fadeOutM");
-//         popup.classList.add("fadeInM");
-//         alreadyClosed = false;
-//     }
-// }
-
-// function closePopup() {
-//     if (popup.style.display === "block") {
-//         popup.classList.remove("fadeInM");
-//         popup.classList.add("fadeOutM");
-//         popup.addEventListener('animationend', function () {
-//             if (popup.classList.contains('fadeOutM')) {
-//                 popup.style.display = "none";
-//                 alreadyClosed = true;
-//             }
-//         }, { once: true });
-//     }
-// }
-// window.onkeydown = function (event) {
-//     if (event.key === "Escape") {
-//         closePopup();
-//     }
-// };
-
-// window.onscroll = function () {
-//     if (!alreadyClosed) {
-//         closePopup();
-//     }
-// };
-// window.onresize = function () {
-//     if (!alreadyClosed) {
-//         closePopup();
-//     }
-// };
-
-
-
-
-
