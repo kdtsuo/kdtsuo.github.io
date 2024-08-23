@@ -44,8 +44,7 @@
   display: flex;
   aspect-ratio: 16 / 9;
   height: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
@@ -340,8 +339,6 @@
   max-width: 100%;
   max-height: 100%;
   opacity: 1;
-  border-radius: 15px;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
 }
 
 .media-text {
@@ -700,11 +697,6 @@
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
   }
 
-  .slider img {
-    width: 95%;
-    height: 95%;
-  }
-
   .slidernav {
     bottom: 1rem;
   }
@@ -880,7 +872,7 @@
   .media img {
     max-width: 100%;
     max-height: 100%;
-    margin: 15px 0px;
+    margin: 0px 0px;
   }
 
   .media-text {
