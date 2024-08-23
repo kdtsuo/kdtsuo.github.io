@@ -112,7 +112,8 @@ function slider(sliderSelector, slidesSelector, navAnchorsSelector) {
 
     slider.addEventListener('touchend', resetInactivityTimeout);
 }
-slider('.slider', '.slider img', '.slidernav a');
+slider('.slider-1', '.slider-1 img', '.slider-nav-1 a');
+slider('.slider-2', '.slider-2 img', '.slider-nav-2 a');
 
 // portfolio hover effect
 document.querySelectorAll('.media').forEach(mediaElement => {
