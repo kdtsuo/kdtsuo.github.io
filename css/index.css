@@ -54,6 +54,8 @@
 .slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
+  overflow-y: auto;
+  overflow-x: hidden;
   object-fit: cover;
   cursor: pointer;
 }
