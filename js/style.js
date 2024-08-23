@@ -117,6 +117,7 @@ slider('.slider-2', '.slider-2 img', '.slider-nav-2 a', 3500);
 slider('.slider-3', '.slider-3 img', '.slider-nav-3 a', 4000);
 slider('.slider-4', '.slider-4 img', '.slider-nav-4 a', 4500);
 
+
 // portfolio hover effect
 document.querySelectorAll('.media').forEach(mediaElement => {
     mediaElement.addEventListener('mouseover', () => {

@@ -54,8 +54,6 @@
 .slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
-  overflow-y: auto;
-  overflow-x: hidden;
   object-fit: cover;
   cursor: pointer;
 }
@@ -688,7 +686,7 @@
   }
 
   .slidecontainer {
-    padding: 0px;
+    margin: 25px 0px;
   }
 
   .slidewrapper {
@@ -703,6 +701,8 @@
   .slider img {
     width: 100%;
     height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .slidernav {
