@@ -124,26 +124,29 @@ slider(".slider-4", ".slider-4 img", ".slider-nav-4 a", 4500);
 
 const mediaText = ".media-text";
 const mediaImg = ".media img";
+let clickedToTurnOff = false;
 
 document.querySelectorAll(".media").forEach((mediaElement) => {
   let isClicked = false;
-  let clickedToTurnOff = false;
+
   // Handle hover effects
   mediaElement.addEventListener("mouseover", () => {
     mediaElement.classList.remove("nudgeDown");
     mediaElement.classList.add("nudgeUp");
     if (!isClicked && !clickedToTurnOff) {
       const textElement = mediaElement.querySelector(mediaText);
-      const imgElement = mediaElement.querySelector(mediaImg);
+      const imgElements = document.querySelectorAll(mediaImg);
       mediaElement.classList.remove("nudgeDown");
       mediaElement.classList.add("nudgeUp");
-      if (imgElement) {
+      if (textElement) {
         textElement.classList.remove("fadeOutM");
         textElement.classList.add("fadeInM");
       }
 
-      imgElement.classList.remove("brightIn");
-      imgElement.classList.add("brightOut");
+      imgElements.forEach((imgElement) => {
+        imgElement.classList.remove("brightIn");
+        imgElement.classList.add("brightOut");
+      });
     }
   });
 
@@ -152,15 +155,17 @@ document.querySelectorAll(".media").forEach((mediaElement) => {
     mediaElement.classList.add("nudgeDown");
     if (!isClicked) {
       const textElement = mediaElement.querySelector(mediaText);
-      const imgElement = mediaElement.querySelector(mediaImg);
+      const imgElements = document.querySelectorAll(mediaImg);
 
-      if (imgElement) {
+      if (textElement) {
         textElement.classList.remove("fadeInM");
         textElement.classList.add("fadeOutM");
       }
 
-      imgElement.classList.remove("brightOut");
-      imgElement.classList.add("brightIn");
+      imgElements.forEach((imgElement) => {
+        imgElement.classList.remove("brightOut");
+        imgElement.classList.add("brightIn");
+      });
     }
   });
 
@@ -169,27 +174,31 @@ document.querySelectorAll(".media").forEach((mediaElement) => {
     // Check if the click is not within .slidernav
     if (!event.target.closest(".slidernav")) {
       const textElement = mediaElement.querySelector(".media-text");
-      const imgElement = mediaElement.querySelector(".media img");
+      const imgElements = document.querySelectorAll(".media img");
       isClicked = !isClicked;
 
       if (isClicked) {
         // Add the clicked class
         mediaElement.classList.add("clicked");
-        if (imgElement) {
+        if (textElement) {
           textElement.classList.remove("fadeOutM");
           textElement.classList.add("fadeInM");
         }
-        imgElement.classList.remove("brightIn");
-        imgElement.classList.add("brightOut");
+        imgElements.forEach((imgElement) => {
+          imgElement.classList.remove("brightIn");
+          imgElement.classList.add("brightOut");
+        });
       } else {
         // Remove the clicked class
         mediaElement.classList.remove("clicked");
-        if (imgElement) {
+        if (textElement) {
           textElement.classList.remove("fadeInM");
           textElement.classList.add("fadeOutM");
         }
-        imgElement.classList.remove("brightOut");
-        imgElement.classList.add("brightIn");
+        imgElements.forEach((imgElement) => {
+          imgElement.classList.remove("brightOut");
+          imgElement.classList.add("brightIn");
+        });
         clickedToTurnOff = true;
       }
     }
@@ -198,17 +207,21 @@ document.querySelectorAll(".media").forEach((mediaElement) => {
 
 // Handle click on slidernav to remove all effects from media elements
 document.querySelector(".slidernav").addEventListener("click", () => {
-  document.querySelectorAll(".media").forEach((mediaElement) => {
-    const textElement = mediaElement.querySelector(mediaText);
-    const imgElement = mediaElement.querySelector(mediaImg);
-    if (imgElement) {
-      textElement.classList.remove("fadeInM");
-      textElement.classList.add("fadeOutM");
-    }
+  const textElements = document.querySelectorAll(mediaText);
+  const imgElements = document.querySelectorAll(mediaImg);
+
+  textElements.forEach((textElement) => {
+    textElement.classList.remove("fadeInM");
+    textElement.classList.add("fadeOutM");
+  });
+  imgElements.forEach((imgElement) => {
     imgElement.classList.remove("brightOut");
     imgElement.classList.add("brightIn");
+  });
+  document.querySelectorAll(".media").forEach((mediaElement) => {
     mediaElement.classList.remove("clicked");
   });
+  clickedToTurnOff = true;
 });
 
 // up button
