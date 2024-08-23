@@ -124,83 +124,47 @@ slider(".slider-4", ".slider-4 img", ".slider-nav-4 a", 4500);
 
 const mediaText = ".media-text";
 const mediaImg = ".media img";
-let clickedToTurnOff = false;
+// Function to handle the click effect
+function handleMediaClick(mediaElement, isClicked) {
+  const textElement = mediaElement.querySelector(".media-text");
+  const imgElements = mediaElement.querySelectorAll("img"); // Only select images within the clicked media element
+  if (isClicked) {
+    // Add the clicked class
+    mediaElement.classList.add("clicked");
+    if (textElement) {
+      textElement.classList.remove("fadeOutM");
+      textElement.classList.add("fadeInM");
+    }
+    imgElements.forEach((imgElement) => {
+      imgElement.classList.remove("brightIn");
+      imgElement.classList.add("brightOut");
+    });
+  } else {
+    // Remove the clicked class
+    mediaElement.classList.remove("clicked");
+    if (textElement) {
+      textElement.classList.remove("fadeInM");
+      textElement.classList.add("fadeOutM");
+    }
+    imgElements.forEach((imgElement) => {
+      imgElement.classList.remove("brightOut");
+      imgElement.classList.add("brightIn");
+    });
+  }
+}
 
+// Add event listener for all .media elements
 document.querySelectorAll(".media").forEach((mediaElement) => {
-  let isClicked = false;
+  let isClicked = mediaElement.classList.contains("default-clicked");
 
-  // Handle hover effects
-  mediaElement.addEventListener("mouseover", () => {
-    mediaElement.classList.remove("nudgeDown");
-    mediaElement.classList.add("nudgeUp");
-    if (!isClicked && !clickedToTurnOff) {
-      const textElement = mediaElement.querySelector(mediaText);
-      const imgElements = document.querySelectorAll(mediaImg);
-      mediaElement.classList.remove("nudgeDown");
-      mediaElement.classList.add("nudgeUp");
-      if (textElement) {
-        textElement.classList.remove("fadeOutM");
-        textElement.classList.add("fadeInM");
-      }
+  // Initialize click state based on the presence of the `default-clicked` class
+  handleMediaClick(mediaElement, isClicked);
 
-      imgElements.forEach((imgElement) => {
-        imgElement.classList.remove("brightIn");
-        imgElement.classList.add("brightOut");
-      });
-    }
-  });
-
-  mediaElement.addEventListener("mouseout", () => {
-    mediaElement.classList.remove("nudgeUp");
-    mediaElement.classList.add("nudgeDown");
-    if (!isClicked) {
-      const textElement = mediaElement.querySelector(mediaText);
-      const imgElements = document.querySelectorAll(mediaImg);
-
-      if (textElement) {
-        textElement.classList.remove("fadeInM");
-        textElement.classList.add("fadeOutM");
-      }
-
-      imgElements.forEach((imgElement) => {
-        imgElement.classList.remove("brightOut");
-        imgElement.classList.add("brightIn");
-      });
-    }
-  });
-
-  // Handle click to toggle effect
   mediaElement.addEventListener("click", (event) => {
     // Check if the click is not within .slidernav
     if (!event.target.closest(".slidernav")) {
-      const textElement = mediaElement.querySelector(".media-text");
-      const imgElements = document.querySelectorAll(".media img");
       isClicked = !isClicked;
-
-      if (isClicked) {
-        // Add the clicked class
-        mediaElement.classList.add("clicked");
-        if (textElement) {
-          textElement.classList.remove("fadeOutM");
-          textElement.classList.add("fadeInM");
-        }
-        imgElements.forEach((imgElement) => {
-          imgElement.classList.remove("brightIn");
-          imgElement.classList.add("brightOut");
-        });
-      } else {
-        // Remove the clicked class
-        mediaElement.classList.remove("clicked");
-        if (textElement) {
-          textElement.classList.remove("fadeInM");
-          textElement.classList.add("fadeOutM");
-        }
-        imgElements.forEach((imgElement) => {
-          imgElement.classList.remove("brightOut");
-          imgElement.classList.add("brightIn");
-        });
-        clickedToTurnOff = true;
-      }
+      handleMediaClick(mediaElement, isClicked);
     }
   });
 });
@@ -221,7 +185,6 @@ document.querySelector(".slidernav").addEventListener("click", () => {
   document.querySelectorAll(".media").forEach((mediaElement) => {
     mediaElement.classList.remove("clicked");
   });
-  clickedToTurnOff = true;
 });
 
 // up button
