@@ -275,11 +275,13 @@ for (let i = 0; i < pictures.length; i++) {
 const portfolioSection = document.getElementById("portfolio");
 function handleIntersection(entries) {
   entries.forEach((entry) => {
+    time = 2000;
+    delay = 500;
     if (entry.isIntersecting) {
-      slider(".slider-1", ".slider-1 img", ".slider-nav-1 a", 3000);
-      slider(".slider-2", ".slider-2 img", ".slider-nav-2 a", 3500);
-      slider(".slider-3", ".slider-3 img", ".slider-nav-3 a", 4000);
-      slider(".slider-4", ".slider-4 img", ".slider-nav-4 a", 4500);
+      slider(".slider-1", ".slider-1 img", ".slider-nav-1 a", time + delay);
+      slider(".slider-2", ".slider-2 img", ".slider-nav-2 a", time + delay);
+      slider(".slider-3", ".slider-3 img", ".slider-nav-3 a", time + delay);
+      slider(".slider-4", ".slider-4 img", ".slider-nav-4 a", time + delay);
     }
   });
 }
