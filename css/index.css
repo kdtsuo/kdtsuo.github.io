@@ -115,7 +115,6 @@
   animation: fadeOutHalf 0.25s ease forwards;
 }
 
-
 /* == */
 
 /* About section */
@@ -200,8 +199,6 @@
   margin: 25px 0px;
   z-index: 1;
 }
-
-
 
 .whatwedo-container {
   font-size: var(--textSize);
@@ -353,7 +350,6 @@
   font-size: var(--smallTS);
   opacity: 0;
   transition: opacity 250ms ease;
-
 }
 
 .media-text h1 {
@@ -417,7 +413,6 @@
   font-size: var(--XTS);
   cursor: pointer;
   transition: all 0.25s ease;
-
 }
 
 .positions-buttons button:hover {
@@ -520,7 +515,6 @@
 .contacts-social-medias ul {
   list-style-type: none;
   text-decoration: none;
-
   margin: 0;
   padding: 0;
   color: var(--color-6);
@@ -537,17 +531,17 @@
   max-width: 200px;
   max-height: 200px;
   padding: 10px;
-  opacity: 0.5;
+  opacity: 0.75;
+  transition: opacity 0.25s ease;
 }
 
 .ct:hover {
   opacity: 1;
-  animation: fadeInHalf 0.25s ease forwards,
-    wiggleXAndNudgeUp 0.25s ease forwards;
+  animation: nudgeUp 0.25s ease forwards;
 }
 
 .ct:not(:hover) {
-  animation: fadeOutHalf 0.25s ease forwards, nudgeDown 0.25s ease forwards;
+  animation: nudgeDown 0.25s ease forwards;
 }
 
 /* == */

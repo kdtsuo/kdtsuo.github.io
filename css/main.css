@@ -149,11 +149,12 @@ body {
   z-index: 99;
   border: none;
   outline: none;
-  opacity: 0.75;
   cursor: white;
   cursor: pointer;
   padding: 30px;
   background: none;
+  opacity: 0.75;
+  transition: opacity 0.25s ease;
 }
 
 #upButton img {
@@ -202,7 +203,7 @@ body {
   max-height: 25px;
   padding: 25px 25px 0px 25px;
   z-index: 101;
-  opacity: 0.5;
+  opacity: 0.75;
   transition: opacity 0.25s ease;
 }
 
@@ -280,16 +281,12 @@ body {
 }
 
 .navbar-mobile-ql {
-  opacity: 0.5;
+  opacity: 0.75;
+  transition: opacity 0.25s ease;
 }
 
 .navbar-mobile-ql:hover {
   opacity: 1;
-  animation: fadeInHalf 0.25s ease forwards;
-}
-
-.navbar-mobile-ql:not(:hover) {
-  animation: fadeOutHalf 0.25s ease forwards;
 }
 
 /*  */
@@ -383,7 +380,7 @@ body {
   .navbar-icon {
     display: flex;
     margin: 0;
-    opacity: 0.5;
+    opacity: 1;
     transition: opacity 250ms ease;
     margin: 0px;
     padding: 25px;
