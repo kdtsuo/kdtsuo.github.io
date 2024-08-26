@@ -117,7 +117,6 @@ function slider(sliderSelector, slidesSelector, navAnchorsSelector, delay) {
 }
 
 // slideshow effect
-
 const mediaText = ".media-text";
 const mediaImg = ".media img";
 // Function to handle the click effect
@@ -166,22 +165,27 @@ document.querySelectorAll(".media").forEach((mediaElement) => {
 });
 
 // Handle click on slidernav to remove all effects from media elements
-document.querySelector(".slidernav").addEventListener("click", () => {
-  const textElements = document.querySelectorAll(mediaText);
-  const imgElements = document.querySelectorAll(mediaImg);
+document.querySelectorAll(".slidernav").forEach((navElement) => {
+  navElement.addEventListener("click", () => {
+    const textElements = document.querySelectorAll(".media-text");
+    const imgElements = document.querySelectorAll(".media img");
 
-  textElements.forEach((textElement) => {
-    textElement.classList.remove("fadeInM");
-    textElement.classList.add("fadeOutM");
-  });
-  imgElements.forEach((imgElement) => {
-    imgElement.classList.remove("brightOut");
-    imgElement.classList.add("brightIn");
-  });
-  document.querySelectorAll(".media").forEach((mediaElement) => {
-    mediaElement.classList.remove("clicked");
+    textElements.forEach((textElement) => {
+      textElement.classList.remove("fadeInM");
+      textElement.classList.add("fadeOutM");
+    });
+
+    imgElements.forEach((imgElement) => {
+      imgElement.classList.remove("brightOut");
+      imgElement.classList.add("brightIn");
+    });
+
+    document.querySelectorAll(".media").forEach((mediaElement) => {
+      mediaElement.classList.remove("clicked");
+    });
   });
 });
+
 
 // up button
 let upButton = document.getElementById("upButton");
