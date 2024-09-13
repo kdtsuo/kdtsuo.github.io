@@ -422,4 +422,11 @@ body {
 .rmlogo img {
   max-width: 100px;
   max-height: 100px;
+  padding: 10px;
+  align-items: center;
+}
+
+.rmlogo {
+  display: flex;
+  justify-content: center;
 }
