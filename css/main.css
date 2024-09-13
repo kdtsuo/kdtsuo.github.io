@@ -418,3 +418,8 @@ body {
   color: var(--color-2);
   text-align: center;
 }
+
+.rmlogo img {
+  max-width: 100px;
+  max-height: 100px;
+}
