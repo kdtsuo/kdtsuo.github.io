@@ -970,6 +970,10 @@
     display: none;
   }
 
+  .positions-container {
+    margin: 0px;
+  }
+
   .positions-container-title {
     font-size: var(--textSize);
   }
