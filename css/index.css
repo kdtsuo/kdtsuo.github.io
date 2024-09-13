@@ -28,6 +28,58 @@
   color: var(--color-4);
 }
 
+/* drop down section */
+.home-dropdown {
+  display: block;
+}
+
+.dropdown-anchor {
+  display: flex;
+  color: var(--color-7);
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.dropdown-button {
+  display: flex;
+  padding: 25px;
+  font-size: var(--textSize);
+  color: black;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px 5px hsla(0, 0%, 0%, 0.25);
+  justify-content: center;
+  cursor: pointer;
+  width: 85%;
+  transition: all 0.25s ease;
+  margin: 10px;
+  justify-content: flex-start;
+}
+
+.dropdown-button:hover {
+  background-color: var(--color-3);
+  animation: hoverZoomIn 0.25s ease forwards;
+}
+
+.dropdown-button:not(:hover) {
+  animation: hoverZoomOut 0.25s ease forwards;
+}
+
+.dropdown-image {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0px 10px;
+}
+
+.dropdown-text {
+  flex: auto;
+  margin: 0px 10px;
+  align-self: center;
+}
+
 /* image slider for home */
 .slidecontainer {
   padding: 0px;
@@ -314,7 +366,6 @@
 }
 
 .portfolio p {
-  margin: 25px;
   color: var(--color-7);
   font-size: var(--midTS);
 }
@@ -438,64 +489,65 @@
 }
 
 .positions-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.card {
   display: block;
-  text-align: center;
-  max-width: 400px;
-  max-height: 625px;
-  margin: 25px;
-  border-radius: 15px;
-  border: 5px solid var(--color-2);
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
-  background-color: var(--color-3);
-  transition: background-color 250ms ease;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
 }
 
-.card:hover {
-  opacity: 1;
-  background-color: var(--color-5);
+.position-anchor {
+  display: flex;
+
+  color: var(--color-7);
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.position-button {
+  display: flex;
+  padding: 25px;
+  font-size: var(--textSize);
+  color: black;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px 5px hsla(0, 0%, 0%, 0.25);
+  justify-content: center;
+  cursor: pointer;
+  width: 85%;
+  transition: all 0.25s ease;
+  margin: 10px;
+  justify-content: flex-start;
+}
+
+.position-button:hover {
+  background-color: var(--color-3);
   animation: hoverZoomIn 0.25s ease forwards;
 }
 
-.card:not(:hover) {
+.position-button:not(:hover) {
   animation: hoverZoomOut 0.25s ease forwards;
 }
 
-.card img {
-  border-radius: 12px;
-  max-width: 400px;
-  max-height: 500px;
+.position-image {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0px 10px;
+
 }
 
-.card h1 {
-  font-size: 1.5rem;
-  margin: 25px;
+.position-text {
+  flex: auto;
+  margin: 0px 10px;
+  align-self: center;
 }
 
-.card p {
-  text-align: left;
-  font-size: 1rem;
-  margin: 25px;
-  color: var(--color-7);
-}
 
-.card a {
-  color: var(--color-4);
-  transition: color 0.25s ease;
-  text-decoration: none;
+.button1,
+.button2,
+.button3 {
+  filter: invert(25%);
+  cursor: not-allowed;
 }
-
-.card a:hover {
-  color: var(--color-2);
-}
-
-/* not available positions: change filter grayscale value. */
 
 /* == */
 
@@ -672,6 +724,20 @@
 @media (max-width: 840px) {
   .home-info h1 {
     font-size: 1rem;
+  }
+
+  .dropdown-button {
+    padding: 15px;
+  }
+
+  .dropdown-text {
+    font-size: var(--smallTS);
+  }
+
+  .dropdown-image {
+    max-width: 25px;
+    max-height: 25px;
+    align-self: center;
   }
 
   .slidecontainer {
@@ -907,6 +973,21 @@
   .positions-container-title {
     font-size: var(--textSize);
   }
+
+  .position-text {
+    font-size: var(--smallTS);
+  }
+
+  .position-button {
+    padding: 15px;
+
+  }
+
+  .position-image {
+    max-width: 25px;
+    max-height: 25px;
+  }
+
 
   .hl {
     display: none;
