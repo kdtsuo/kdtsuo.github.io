@@ -179,7 +179,7 @@
 .about-container {
   margin: 50px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .about-title {
@@ -193,12 +193,14 @@
 
 .about-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
 }
 
 .about-content img {
-  max-width: 800px;
-  max-height: 800px;
-  margin: 25px;
+  max-width: 90%;
+  max-height: 90%;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
   border-radius: 15px;
 }
