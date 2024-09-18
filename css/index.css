@@ -608,6 +608,7 @@
 .sponsor-span {
   display: flex;
   justify-content: center;
+  margin: 0px 10px;
 
 }
 
@@ -616,11 +617,6 @@
   max-height: 25px;
   margin: 0px 10px;
   align-self: center;
-}
-
-.sponsor-container iframe {
-  width: 400px;
-  height: 400px;
 }
 
 .sponsor-container:hover {
@@ -633,8 +629,8 @@
 }
 
 .sponsor-image {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .formosa {
@@ -1159,11 +1155,6 @@
 
   .sponsors-container h1 {
     font-size: var(--textSize);
-  }
-
-  .sponsor-container iframe {
-    width: 300px;
-    height: 300px;
   }
 
   .sponsor-container p {
