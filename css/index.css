@@ -566,12 +566,18 @@
 }
 
 .sponsors-title {
+  margin: 25px;
   font-size: var(--textSize);
 
 }
 
 .sponsors-title h1 {
   color: var(--color-4);
+}
+
+.sponsors-title p {
+  color: var(--color-7);
+  margin: 25px;
 }
 
 .sponsors-container {
@@ -1062,6 +1068,7 @@
 
   .portfolio-title h1 {
     font-size: var(--textSize);
+    text-align: center;
   }
 
   .portfolio p {
@@ -1151,6 +1158,7 @@
 
   .sponsors-title p {
     font-size: var(--smallTS);
+    margin: 0px;
   }
 
   .sponsors-container h1 {
