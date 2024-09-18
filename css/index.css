@@ -596,7 +596,7 @@
   font-size: var(--XTS);
 }
 
-.sponsor-container-link a {
+.sponsor-container-link {
   text-decoration: none;
 }
 
