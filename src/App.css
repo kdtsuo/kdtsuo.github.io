@@ -80,11 +80,15 @@
   }
 
   .fadein0 {
-    @apply opacity-0 hover:opacity-100;
+    @apply opaciy-0 hover:opacity-100;
   }
 
   .btn-lightblue {
-    @apply px-6 py-3 border-white border-4 font-semibold rounded-2xl text-darkslategrey bg-white hover:bg-lightblue;
+    @apply px-6 py-3 border-blue-100 border-4 font-semibold rounded-2xl text-darkslategrey bg-white hover:bg-lightblue;
+  }
+
+  .btn-yellow {
+    @apply px-6 py-3 border-white border-4 font-semibold rounded-2xl text-darkslategrey bg-yellow-300;
   }
 
   .title {
