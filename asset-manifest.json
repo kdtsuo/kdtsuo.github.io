@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.0eb98d4d.css",
-    "main.js": "/static/js/main.67cc329c.js",
+    "main.css": "/static/css/main.44a5f1aa.css",
+    "main.js": "/static/js/main.3c052893.js",
     "static/media/joinourteam.jpeg": "/static/media/joinourteam.af869c7a25c1e71de076.jpeg",
     "static/media/team.jpeg": "/static/media/team.a7bbdccebe50cc73221c.jpeg",
     "static/media/dancepractice.png": "/static/media/dancepractice.ab0d4cd49aac69f265a8.png",
     "static/media/events.jpeg": "/static/media/events.0334c997644143e54abd.jpeg",
     "static/media/showcase.jpeg": "/static/media/showcase.eb49d2451904ec5ab3f6.jpeg",
     "static/media/chuugif.gif": "/static/media/chuugif.a32e50729a456eee7fbd.gif",
+    "static/media/bubblewaffle.png": "/static/media/bubblewaffle.1d644e986024161e7bfd.png",
     "static/media/rmlogo.png": "/static/media/rmlogo.f1fb6d5319f1280adec4.png",
     "static/media/kdtlogotransparent.png": "/static/media/kdtlogotransparent.bc23b136d4ce575a842a.png",
+    "static/media/macaoimperialtea.webp": "/static/media/macaoimperialtea.4b568488ccea9e9ccc07.webp",
+    "static/media/formosa.png": "/static/media/formosa.ad0ceb298a42ef8a6745.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.648a483df591a7bb4579.png",
     "static/media/navbaricon.png": "/static/media/navbaricon.fe6cb25ce11b921920f8.png",
     "static/media/hellorubriclogo.png": "/static/media/hellorubriclogo.c22328a0e4b2fa91e8c8.png",
+    "static/media/tossingpizzeria.jpeg": "/static/media/tossingpizzeria.d0d2c45f863a61c0a779.jpeg",
     "index.html": "/index.html",
-    "main.0eb98d4d.css.map": "/static/css/main.0eb98d4d.css.map",
-    "main.67cc329c.js.map": "/static/js/main.67cc329c.js.map"
+    "main.44a5f1aa.css.map": "/static/css/main.44a5f1aa.css.map",
+    "main.3c052893.js.map": "/static/js/main.3c052893.js.map"
   },
   "entrypoints": [
-    "static/css/main.0eb98d4d.css",
-    "static/js/main.67cc329c.js"
+    "static/css/main.44a5f1aa.css",
+    "static/js/main.3c052893.js"
   ]
 }
