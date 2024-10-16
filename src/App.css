@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer components {
+  .glass-slate {
+    @apply bg-slate-800 backdrop-filter backdrop-blur-xl shadow-lg bg-opacity-25;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .strong-slate {
+    @apply bg-slate-800 backdrop-filter backdrop-blur-3xl shadow-lg bg-opacity-95;
   }
-  to {
-    transform: rotate(360deg);
+
+  .glass-amber {
+    @apply bg-amber-800 backdrop-filter backdrop-blur-lg shadow-lg bg-opacity-50;
+  }
+
+  .glass-lightblue {
+    @apply bg-lightblue backdrop-filter backdrop-blur-lg shadow-lg bg-opacity-50;
+  }
+
+  .mp5 {
+    @apply m-5 p-5;
+  }
+
+  .mp3 {
+    @apply m-3 p-3;
+  }
+
+  .t200e {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .t500e {
+    @apply transition-all duration-500 ease-in-out;
+  }
+
+  .t1000e {
+    @apply transition-all duration-1000 ease-in-out;
+  }
+
+  .t100d200e {
+    @apply transition-all duration-100 delay-200 ease-in-out;
+  }
+
+  .arrow-icon-pop-left {
+    @apply group-hover:opacity-100 -translate-x-3 group-hover:translate-x-0;
+  }
+
+  .arrow-icon-pop-right {
+    @apply group-hover:opacity-100 translate-x-3 group-hover:translate-x-0;
+  }
+
+  .nudgeup {
+    @apply hover:-translate-y-2;
+  }
+
+  .zoomout {
+    @apply hover:scale-75;
+  }
+
+  .zoomin {
+    @apply hover:scale-125;
+  }
+
+  .zoomin-sm {
+    @apply hover:scale-110;
+  }
+
+  .point {
+    @apply hover:cursor-pointer;
+  }
+
+  .btn {
+    @apply mt-6 px-6 py-3 bg-slate-800 text-white font-extrabold rounded-xl hover:bg-slate-900 t200e;
+  }
+
+  .fadein80 {
+    @apply opacity-80 hover:opacity-100;
+  }
+
+  .fadein0 {
+    @apply opacity-0 hover:opacity-100;
+  }
+
+  .btn-lightblue {
+    @apply px-6 py-3 border-white border-4 font-semibold rounded-2xl text-darkslategrey bg-white hover:bg-lightblue;
+  }
+
+  .title {
+    @apply text-7xl font-bold;
+  }
+  .subtitle {
+    @apply text-5xl font-bold;
+  }
+  .paragraph {
+    @apply text-3xl font-semibold;
+  }
+  .vl {
+    @apply h-96 border-4 m-12;
+  }
+  .vl-sm {
+    @apply h-72 border-4 m-8;
+  }
+  .hl {
+    @apply w-full border-4 m-12;
+  }
+
+  .notOpen {
+    @apply cursor-not-allowed invert-25;
+  }
+
+  .isOpen {
+    @apply cursor-pointer;
   }
 }

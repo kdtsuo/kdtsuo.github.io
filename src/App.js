@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import About from './components/About.js';
+import Activities from './components/Activites.js';
+import Navbar from './components/Navbar';
+import NavbarPanel from './components/NavbarPanel';
+import QuickLinks from './components/QuickLinks.js';
+import { useNavbar } from './Main.js';
+import Positions from './components/Positions.js';
+import Contacts from './components/Contacts.js';
+import Copyright from './components/Copyright.js';
+import Sponsors from './components/Sponsors.js';
+import Farewell from './components/Farewell.js';
 
 function App() {
+  const { isPanelOpen, togglePanel } = useNavbar();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Navbar isPanelOpen={isPanelOpen} togglePanel={togglePanel} />
+      <NavbarPanel isPanelOpen={isPanelOpen} togglePanel={togglePanel} />
+      <QuickLinks />
+      <About />
+      <Activities />
+      <Positions />
+      <Sponsors />
+      <Contacts />
+      <Farewell />
+      <Copyright />
     </div>
   );
 }
