@@ -58,20 +58,20 @@ function NavbarPanel({ isPanelOpen, togglePanel }) {
                     <div className="flex justify-center flex-wrap items-center">
                         <a target="_blank" rel="noreferrer" href="https://www.instagram.com/rin.m04/?theme=dark"
                             className="ql point nudgeup fadein80 t200e">
-                            <img className="w-16 lg:w-24  h-auto m-3" src={instagramlogo} alt="instagram icon " />
+                            <img className="w-12 lg:w-24  h-auto m-2" src={instagramlogo} alt="instagram icon " />
                         </a>
                         <a target="_blank" rel="noreferrer" href="mailto:kpopdanceteam.suo@gmail.com"
                             className="ql point nudgeup fadein80 t200e">
-                            <img className="w-16 lg:w-24  h-auto m-3" src={maillogo} alt="mail icon" />
+                            <img className="w-12 lg:w-24  h-auto m-2" src={maillogo} alt="mail icon" />
                         </a>
                         <a target="_blank" rel="noreferrer" href="https://discord.com/invite/tbKkvjV2W8"
                             className="ql point nudgeup fadein80 t200e">
-                            <img className="w-16 lg:w-24 h-auto m-3" src={discordlogo} alt="linkedin icon" />
+                            <img className="w-12 lg:w-24 h-auto m-2" src={discordlogo} alt="linkedin icon" />
                         </a>
 
                         <a target="_blank" rel="noreferrer" href="https://www.github.com/rinmeng"
                             className="ql point nudgeup fadein80 t200e">
-                            <img className="w-16 lg:w-24  h-auto m-3" src={githublogo} alt="github icon" />
+                            <img className="w-12 lg:w-24  h-auto m-2" src={githublogo} alt="github icon" />
                         </a>
                     </div>
                 </div>
