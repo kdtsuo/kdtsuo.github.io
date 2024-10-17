@@ -803,6 +803,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -907,6 +912,10 @@ video {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-28 {
@@ -1417,6 +1426,10 @@ video {
 
   .lg\:w-64 {
     width: 16rem;
+  }
+
+  .lg\:w-16 {
+    width: 4rem;
   }
 
   .lg\:max-w-36 {

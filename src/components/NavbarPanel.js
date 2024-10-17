@@ -16,14 +16,14 @@ function NavbarPanel({ isPanelOpen, togglePanel }) {
                 className={`z-20 w-4/5 h-full lg:w-2/5 glass-lightblue fixed right-0 rounded-l-3xl t200e 
             ${isPanelOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} // Handle visibility based on isPanelOpen
             >
-                <div className="flex justify-between items-center mp5">
-                    <button id="cross" className="point group t200e flex items-center" aria-label="Close" onClick={togglePanel}>
-                        <img className="size-8 lg:size-12 opacity-70 t200e 
+                <div className="flex justify-between items-center m-5">
+                    <button id="cross" className="mx-10 point group t200e flex items-center" aria-label="Close" onClick={togglePanel}>
+                        <img className=" size-8 lg:size-12 opacity-70 t200e 
                      group-hover:rotate-180 group-hover:opacity-100 " src={cross} alt="cross" />
                         <img className="arrow-icon-pop-right opacity-0 size-5 g:size-12 t200e rotate-180 " alt="arrow icon" src={arrowright} />
                     </button>
                     <a href="" className="h-auto point group flex items-center">
-                        <img className="arrow-icon-pop-left opacity-0 size-5 lg:size-20 t200e " alt="arrow icon" src={arrowright} />
+                        <img className="arrow-icon-pop-left opacity-0 w-8 h-auto lg:w-16 t200e " alt="arrow icon" src={arrowright} />
                         <img className="w-24 lg:w-40" src={logo} alt="kdt logo" />
                     </a>
                 </div>
@@ -58,20 +58,20 @@ function NavbarPanel({ isPanelOpen, togglePanel }) {
                     <div className="flex justify-center flex-wrap items-center">
                         <a target="_blank" rel="noreferrer" href="https://www.instagram.com/rin.m04/?theme=dark"
                             className="ql point nudgeup fadein80 t200e">
-                            <img className="w-12 lg:w-24  h-auto m-2" src={instagramlogo} alt="instagram icon " />
+                            <img className="w-12 lg:w-20  h-auto m-2" src={instagramlogo} alt="instagram icon " />
                         </a>
                         <a target="_blank" rel="noreferrer" href="mailto:kpopdanceteam.suo@gmail.com"
                             className="ql point nudgeup fadein80 t200e">
-                            <img className="w-12 lg:w-24  h-auto m-2" src={maillogo} alt="mail icon" />
+                            <img className="w-12 lg:w-20  h-auto m-2" src={maillogo} alt="mail icon" />
                         </a>
                         <a target="_blank" rel="noreferrer" href="https://discord.com/invite/tbKkvjV2W8"
                             className="ql point nudgeup fadein80 t200e">
-                            <img className="w-12 lg:w-24 h-auto m-2" src={discordlogo} alt="linkedin icon" />
+                            <img className="w-12 lg:w-20 h-auto m-2" src={discordlogo} alt="linkedin icon" />
                         </a>
 
-                        <a target="_blank" rel="noreferrer" href="https://www.github.com/rinmeng"
+                        <a target="_blank" rel="noreferrer" href="https://www.github.com/kdtsuo/kdtsuo.github.io"
                             className="ql point nudgeup fadein80 t200e">
-                            <img className="w-12 lg:w-24  h-auto m-2" src={githublogo} alt="github icon" />
+                            <img className="w-12 lg:w-20  h-auto m-2" src={githublogo} alt="github icon" />
                         </a>
                     </div>
                 </div>
