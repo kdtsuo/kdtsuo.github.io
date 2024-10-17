@@ -5,8 +5,8 @@ import locationLogo from '../../imgs/icons/locationlogo.png';
 const Sponsor = ({ image, title, location, mapLink, text, websiteLink }) => {
     return (
         <div className="flex flex-col lg:flex-row w-full xl:w-4/6 h-auto justify-start items-center my-5 p-5 md:mp5 border-white border-4 rounded-3xl bg-transparent hover:bg-blue-400 t200e group">
-            <a href={websiteLink} target='_blank'>
-                <img className='w-4/6 lg:max-w-64 h-auto m-5 md:mx-10' src={image} alt='' />
+            <a href={websiteLink} target='_blank' className='flex justify-center items-center'>
+                <img className='w-4/6 lg:w-64 h-auto m-5 md:mx-10 ' src={image} alt='' />
             </a>
             <div className='m-5'>
                 <a href={websiteLink} target='_blank'>

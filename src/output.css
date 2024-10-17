@@ -1403,6 +1403,10 @@ video {
     width: 2rem;
   }
 
+  .lg\:w-64 {
+    width: 16rem;
+  }
+
   .lg\:max-w-36 {
     max-width: 9rem;
   }
