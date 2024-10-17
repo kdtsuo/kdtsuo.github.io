@@ -3,7 +3,7 @@ import logo from '../imgs/rmlogo.png';
 
 const Copyright = () => {
     return (
-        <div className="text-center text-darkslategrey mp5 opacity-75 text-2xl">
+        <div className="text-center text-darkslategrey mp5 opacity-75 text-lg lg:text-2xl">
             <p>&#169; 2024 KDT ("KPop Dance Team") v2.0 &#9829;
                 <br />All rights reserved. Website presented to you by
                 <span className="flex justify-center items-center">

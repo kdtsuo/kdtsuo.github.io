@@ -6,10 +6,12 @@ import rightChevron from '../../imgs/icons/rightchevron.png';
 const Link = ({ image, text, link, isOpen }) => {
 
     return (
-        <a href={link} target='_blank' className={`${isOpen ? 'isOpen' : 'notOpen'} btn-lightblue py-5 lg:py-10 my-4 w-full md:w-4/6 lg:w-5/6 zoomin-sm t200e group drop-shadow-box`}>
+        <a href={link} target='_blank' className={`${isOpen ? 'isOpen' : 'notOpen'} 
+        btn-lightblue py-5 lg:py-10 my-4 w-full md:w-4/6 lg:w-5/6 
+        zoomin-sm t200e group drop-shadow-box`}>
             <div className='flex items-center'>
                 <img className='w-8 lg:w-12 h-auto' src={image} alt='icon' />
-                <h1 className='flex-auto text-center text-2xl lg:text-4xl font-medium'>
+                <h1 className='flex-auto text-center text-md lg:text-4xl font-medium'>
                     {text}
                 </h1>
 

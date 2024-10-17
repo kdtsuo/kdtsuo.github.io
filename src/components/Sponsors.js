@@ -51,26 +51,33 @@ const Sponsors = () => {
 
 
     return (
-        <div id='sponsors' className='bg-darkslateblue items-center mp5 drop-shadow-3xl py-10'>
-            <h1 className='title text-center text-lightblue my-10 p-5'>
-                Thank you to our
-                <span className='text-yellow-200'> sponsors</span>!
-            </h1>
+        <div>
+            <div id='sponsors' className='py-10'>
 
-            <div className='flex justify-center flex-col w-full items-center '>
-                {Sponsors.map((sponsor, index) => (
-                    <Sponsor
-                        key={index}
-                        image={sponsor.image}
-                        title={sponsor.title}
-                        location={sponsor.location}
-                        mapLink={sponsor.mapLink}
-                        text={sponsor.text}
-                        websiteLink={sponsor.websiteLink}
-                    />
-                ))}
+            </div>
+
+            <div id='sponsors' className='bg-darkslateblue items-center p-5 drop-shadow-3xl '>
+                <h1 className='title text-center text-lightblue my-10 p-5'>
+                    Thank you to our
+                    <span className='text-yellow-200'> sponsors</span>!
+                </h1>
+
+                <div className='flex justify-center flex-col w-full items-center text-center '>
+                    {Sponsors.map((sponsor, index) => (
+                        <Sponsor
+                            key={index}
+                            image={sponsor.image}
+                            title={sponsor.title}
+                            location={sponsor.location}
+                            mapLink={sponsor.mapLink}
+                            text={sponsor.text}
+                            websiteLink={sponsor.websiteLink}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
+
     )
 }
 

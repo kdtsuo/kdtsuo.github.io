@@ -23,9 +23,9 @@ const Contacts = () => {
             <div id="contactsection" className="my-10">
                 &nbsp;
             </div>
-            <div id="contact" className=" mp5 bg-lightblue drop-shadow-3xl">
-                <h1 className="my-10 title text-center text-darkslateblue ">Contacts</h1>
-                <div className="flex justify-center items-center flex-wrap my-20">
+            <div id="contact" className="m-5 bg-lightblue drop-shadow-3xl rounded-md">
+                <h1 className=" title text-center text-darkslateblue py-10">Contacts</h1>
+                <div className="flex justify-center items-center flex-wrap">
                     {contacts.map((contact, index) => (
                         <Contact
                             key={index}

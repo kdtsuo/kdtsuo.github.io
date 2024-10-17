@@ -92,7 +92,7 @@
   }
 
   .title {
-    @apply text-7xl font-bold;
+    @apply text-5xl lg:text-7xl font-bold;
   }
   .subtitle {
     @apply text-5xl font-bold;

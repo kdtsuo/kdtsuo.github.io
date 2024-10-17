@@ -4,7 +4,7 @@ import locationLogo from '../../imgs/icons/locationlogo.png';
 
 const Sponsor = ({ image, title, location, mapLink, text, websiteLink }) => {
     return (
-        <div className="flex flex-col lg:flex-row w-full xl:w-4/6 h-auto justify-start items-center my-5 p-5 md:mp5 border-white border-4 rounded-3xl bg-transparent hover:bg-lightblue t200e group">
+        <div className="flex flex-col lg:flex-row w-full xl:w-4/6 h-auto justify-start items-center my-5 p-5 md:mp5 border-white border-4 rounded-3xl bg-transparent hover:bg-blue-400 t200e group">
             <img className='w-4/6 lg:max-w-64 h-auto m-5 md:mx-10' src={image} alt='' />
             <div className='m-5'>
                 <h1 className="text-4xl md:text-6xl font-bold text-white group-hover:text-darkslategrey">

@@ -42,19 +42,19 @@ const Positions = () => {
 
     return (
         <div>
-            <div id='positions' className="my-20 w-screen h-screen relative overflow-hidden drop-shadow-3xl">
+            <div id='positions' className=" my-10 w-screen h-screen relative overflow-hidden drop-shadow-3xl">
                 <img
                     className="absolute inset-0 object-cover w-full h-full brightness-75"
                     src={bgImage}
                     alt="cover"
                 />
                 <div className="relative flex flex-col justify-center items-center h-full p-4">
-                    <h1 className="title text-lightblue text-center">
+                    <h1 className="title text-lightblue text-center ">
                         Did we
                         <span className='text-yellow-100'> excite </span>
                         you?
                     </h1>
-                    <h2 className="p-10 paragraph text-white text-center w-full">
+                    <h2 className=" paragraph text-white text-center w-full my-5">
                         Or do you have a passion for <br />
                         <span className='text-yellow-400'> dancing </span>
                         and
@@ -68,8 +68,11 @@ const Positions = () => {
 
 
             </div>
+            <div id='available-positions' className='py-10'>
 
-            <h1 id='available-positions' className='title text-center text-darkslateblue my-10'>Positions!</h1>
+            </div>
+
+            <h1 className='title text-center text-darkslateblue '>Positions!</h1>
             <div className='flex flex-wrap justify-center items-center mp5'>
                 {positions.map((position, index) => {
                     return (

@@ -36,12 +36,13 @@ const QuickLinks = () => {
         <div>
             <div className='py-20 lg:py-28'>
             </div>
-            <h1 className='text-xl md:text-4xl text-center font-semibold'>
+            <h1 className='p-5 text-xl md:text-4xl text-center font-semibold'>
                 all things kpop for ubco!
-                <br />dance projects and meetups for all kpop fans
+                <br />dance projects and meetups for
+                <br /> all kpop fans &#9829;
             </h1>
 
-            <div className='flex flex-wrap justify-center items-center mp5'>
+            <div className='flex flex-wrap justify-center items-center mp3'>
                 {quickLinks.map((ql, index) => {
                     return (
                         <Link
