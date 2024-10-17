@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.99037776.css",
-    "main.js": "/static/js/main.69f8240d.js",
+    "main.css": "/static/css/main.9d6d07c4.css",
+    "main.js": "/static/js/main.397a78ce.js",
     "static/media/joinourteam.jpeg": "/static/media/joinourteam.af869c7a25c1e71de076.jpeg",
     "static/media/team.jpeg": "/static/media/team.a7bbdccebe50cc73221c.jpeg",
     "static/media/dancepractice.png": "/static/media/dancepractice.ab0d4cd49aac69f265a8.png",
@@ -18,11 +18,11 @@
     "static/media/hellorubriclogo.png": "/static/media/hellorubriclogo.c22328a0e4b2fa91e8c8.png",
     "static/media/tossingpizzeria.jpeg": "/static/media/tossingpizzeria.d0d2c45f863a61c0a779.jpeg",
     "index.html": "/index.html",
-    "main.99037776.css.map": "/static/css/main.99037776.css.map",
-    "main.69f8240d.js.map": "/static/js/main.69f8240d.js.map"
+    "main.9d6d07c4.css.map": "/static/css/main.9d6d07c4.css.map",
+    "main.397a78ce.js.map": "/static/js/main.397a78ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.99037776.css",
-    "static/js/main.69f8240d.js"
+    "static/css/main.9d6d07c4.css",
+    "static/js/main.397a78ce.js"
   ]
 }
