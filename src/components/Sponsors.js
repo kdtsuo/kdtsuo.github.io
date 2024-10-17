@@ -36,7 +36,7 @@ const Sponsors = () => {
         '5538 Airport Way #102, Kelowna',
         'https://www.google.ca/maps/place/%E9%B8%A1%E8%9B%8B%E4%BB%94+Bubble+Waffle+Cafe+(Chinese+Restaurant)/@49.9508013,-119.3867347,17z/data=!3m2!4b1!5s0x537ded77da6dd3e9:0x1754ea70f96d416c!4m6!3m5!1s0x537ded5b5af637c7:0x58f6b1e233da392!8m2!3d49.9507979!4d-119.3841598!16s%2Fg%2F11v3yzttsy?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D',
         'Up to 12% off for KDT members!',
-        'https://www.bubblewafflecafe.com/'
+        'https://www.bubblewafflecafe.ca/'
     )
 
     addSponsor(

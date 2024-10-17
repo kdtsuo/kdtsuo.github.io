@@ -5,12 +5,16 @@ import locationLogo from '../../imgs/icons/locationlogo.png';
 const Sponsor = ({ image, title, location, mapLink, text, websiteLink }) => {
     return (
         <div className="flex flex-col lg:flex-row w-full xl:w-4/6 h-auto justify-start items-center my-5 p-5 md:mp5 border-white border-4 rounded-3xl bg-transparent hover:bg-blue-400 t200e group">
-            <img className='w-4/6 lg:max-w-64 h-auto m-5 md:mx-10' src={image} alt='' />
+            <a href={websiteLink} target='_blank'>
+                <img className='w-4/6 lg:max-w-64 h-auto m-5 md:mx-10' src={image} alt='' />
+            </a>
             <div className='m-5'>
-                <h1 className="text-4xl md:text-6xl font-bold text-white group-hover:text-darkslategrey">
-                    {title}
-                </h1>
-                <a href='https://maps.google.ca' target='_blank'>
+                <a href={websiteLink} target='_blank'>
+                    <h1 className="text-4xl md:text-6xl font-bold text-white group-hover:text-darkslategrey">
+                        {title}
+                    </h1>
+                </a>
+                <a href={mapLink} target='_blank'>
                     <div className='inline-flex btn-lightblue my-5 items-center t200e'>
                         <img className='w-5 h-5' src={locationLogo} alt='location icon' />
                         <p className='mx-5 font-light text-darkslategrey text-xl md:text-2xl'>{location}</p>
@@ -23,7 +27,7 @@ const Sponsor = ({ image, title, location, mapLink, text, websiteLink }) => {
                     </p>
                 </div>
             </div>
-        </div>
+        </div >
 
     )
 }
