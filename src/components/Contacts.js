@@ -23,7 +23,7 @@ const Contacts = () => {
             <div id="contactsection" className="my-10">
                 &nbsp;
             </div>
-            <div id="contact" className="m-5 bg-lightblue drop-shadow-3xl rounded-md">
+            <div id="contact" className="m-5">
                 <h1 className=" title text-center text-darkslateblue py-10">Contacts</h1>
                 <div className="flex justify-center items-center flex-wrap">
                     {contacts.map((contact, index) => (

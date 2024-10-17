@@ -8,7 +8,7 @@ const About = () => {
             <div id='about' className='py-10'>
 
             </div>
-            <div className='bg-lightblue items-center mp5 drop-shadow-3xl rounded-md '>
+            <div className=' items-center mp5 '>
 
                 <h1 className='title text-center text-darkslateblue my-10'>About us!</h1>
 
