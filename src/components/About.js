@@ -17,7 +17,7 @@ const About = () => {
 
                     <div>
                         <h1 className='paragraph lg:subtitle text-center my-5'>What is KDT?</h1>
-                        <p className='text-2xl lg:paragraph text-center p-5'>
+                        <p className='text-2xl lg:paragraph text-center'>
                             The KPop Dance Team (KDT), is a team consisting of diverse,
                             unique individuals that have common interests in dancing,
                             choreographing, and performing to promote korean pop-culture,
