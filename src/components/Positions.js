@@ -9,7 +9,11 @@ const Positions = () => {
 
     const addPosition = (image, text, link, isOpen) => positions.push({ image, text, link, isOpen });
 
-
+    addPosition(
+        googleformsicon,
+        'Cameraman',
+        'https://docs.google.com/forms/d/e/1FAIpQLScVl_PS4pdEdQ_4HwN6OO761pMiz7moYdwuyBTdnEsGE2dj3A/',
+        true)
     addPosition(
         googleformsicon,
         'Senior Executive Team',
@@ -31,11 +35,7 @@ const Positions = () => {
         'Performance Team',
         'https://docs.google.com/forms/d/e/1FAIpQLSdDBK_xgyeub7Przux1Lle2Ax-c_BDmN0B79Qpf7nKK-PJaXA/',
         false)
-    addPosition(
-        googleformsicon,
-        'Cameraman Application',
-        'https://docs.google.com/forms/d/e/1FAIpQLScVl_PS4pdEdQ_4HwN6OO761pMiz7moYdwuyBTdnEsGE2dj3A/',
-        true)
+
 
 
 

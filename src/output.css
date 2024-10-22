@@ -658,7 +658,7 @@ video {
   padding-right: 1.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  font-weight: 600;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(44 56 42 / var(--tw-text-opacity));
 }
@@ -666,6 +666,19 @@ video {
 .btn-lightblue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(185 230 255 / var(--tw-bg-opacity));
+}
+
+.fact-yellow {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(44 56 42 / var(--tw-text-opacity));
 }
 
 .title {
@@ -808,6 +821,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -898,10 +916,6 @@ video {
   width: 2rem;
 }
 
-.w-auto {
-  width: auto;
-}
-
 .w-full {
   width: 100%;
 }
@@ -910,16 +924,8 @@ video {
   width: 100vw;
 }
 
-.max-w-28 {
-  max-width: 7rem;
-}
-
 .max-w-24 {
   max-width: 6rem;
-}
-
-.max-w-20 {
-  max-width: 5rem;
 }
 
 .flex-auto {
@@ -1042,11 +1048,6 @@ video {
   background-color: transparent;
 }
 
-.bg-yellow-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -1082,11 +1083,6 @@ video {
   padding-right: 2.5rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1097,11 +1093,6 @@ video {
   padding-bottom: 5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1110,6 +1101,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -1141,12 +1137,18 @@ video {
   line-height: 1.75rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
-.font-extrabold {
-  font-weight: 800;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-light {
@@ -1167,11 +1169,6 @@ video {
 
 .leading-relaxed {
   line-height: 1.625;
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-darkslateblue {

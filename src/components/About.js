@@ -5,7 +5,7 @@ import teamphoto from '../imgs/team.jpeg';
 const About = () => {
     return (
         <div>
-            <div id='about' className='py-10'>
+            <div id='about' className=''>
 
             </div>
             <div className=' items-center mp5 '>
