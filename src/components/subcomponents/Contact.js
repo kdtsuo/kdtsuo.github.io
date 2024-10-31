@@ -1,5 +1,5 @@
 import newtabLogo from '../../imgs/icons/newtablogo.png';
-import newtablogoWhite from '../../imgs/icons/newtablogowhite.png';
+
 
 
 const Contact = ({ link, image, text }) => {

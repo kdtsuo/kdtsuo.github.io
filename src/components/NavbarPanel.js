@@ -43,7 +43,7 @@ function NavbarPanel({ isPanelOpen, togglePanel }) {
 
                 <div className="flex flex-col justify-center items-center mp3 font-normal text-white">
                     {navLinks.map((link, index) => (
-                        <a href={link.href} key={index} className="text-3xl lg:text-5xl point group mp3">
+                        <a href={link.href} key={index} className="text-3xl point group py-3">
                             <span className="nav-option flex justify-center items-center -translate-x-6 opacity-80 group-hover:opacity-100 group-hover:translate-x-0 t200e">
                                 <img className="arrow-icon-pop-left opacity-0 size-5 t200e mx-3" alt="arrow icon" src={arrowright} />
                                 {link.text}
@@ -56,7 +56,7 @@ function NavbarPanel({ isPanelOpen, togglePanel }) {
                     <div className="flex justify-center flex-wrap items-center">
                         {quickLinks.map((link, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={link.href} className="ql point nudgeup fadein80 t200e">
-                                <img className="w-12 lg:w-20 h-auto m-2" src={link.imgSrc} alt={link.alt} />
+                                <img className="w-14 h-auto m-2" src={link.imgSrc} alt={link.alt} />
                             </a>
                         ))}
                     </div>

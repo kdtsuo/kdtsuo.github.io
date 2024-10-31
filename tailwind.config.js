@@ -6,9 +6,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'lightblue': '#B9E6FF',
         'darkslategrey': '#2C382A',
         'darkslateblue': '#4663AC',
+        'lightblue': {
+          '100': '#B9E6FF',
+          '200': '#8CD5FF',
+          '300': '#5FC4FF',
+          '400': '#32B3FF',
+          '500': '#05A2FF',
+
+        },
+
+
       },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.35)',

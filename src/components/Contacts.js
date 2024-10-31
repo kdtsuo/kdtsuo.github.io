@@ -25,8 +25,8 @@ const Contacts = () => {
                 &nbsp;
             </div>
             <div id="contact" className="m-5">
-                <h1 className=" title text-center text-darkslateblue py-10">Contacts</h1>
-                <div className="flex justify-center items-center flex-wrap">
+                <h1 className=" title text-center text-darkslateblue py-10 ">Contacts</h1>
+                <div className="flex justify-center items-center flex-wrap my-10">
                     {contacts.map((contact, index) => (
                         <Contact
                             key={index}
@@ -37,8 +37,6 @@ const Contacts = () => {
                     ))}
                 </div>
             </div>
-
-            <h1 className='title text-darkslateblue text-center my-10'>Direct Contact via Email</h1>
             <ContactForm />
         </div>
     );

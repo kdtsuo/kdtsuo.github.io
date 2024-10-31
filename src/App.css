@@ -16,7 +16,7 @@
   }
 
   .glass-lightblue {
-    @apply bg-lightblue backdrop-filter backdrop-blur-lg shadow-lg bg-opacity-50;
+    @apply bg-lightblue-100 backdrop-filter backdrop-blur-lg shadow-lg bg-opacity-50;
   }
 
   .mp5 {
@@ -74,6 +74,13 @@
   .btn {
     @apply mt-6 px-6 py-3 bg-slate-800 text-white font-extrabold rounded-xl hover:bg-slate-900 t200e;
   }
+  .btn-lt {
+    @apply mt-6 px-6 py-3 bg-slate-600 text-white font-extrabold rounded-xl hover:bg-slate-800 t200e;
+  }
+
+  .btn-lightblue-200 {
+    @apply px-6 py-3 border-2 bg-lightblue-200 text-darkslategrey font-extrabold rounded-xl hover:bg-lightblue-500 hover:text-white t200e;
+  }
 
   .fadein80 {
     @apply opacity-80 hover:opacity-100;
@@ -84,7 +91,7 @@
   }
 
   .btn-lightblue {
-    @apply px-6 py-3 border-blue-100 border-4 font-medium rounded-2xl text-darkslategrey bg-white hover:bg-lightblue;
+    @apply px-6 py-3 border-blue-100 border-4 font-medium rounded-2xl text-darkslategrey bg-white hover:bg-lightblue-100;
   }
 
   .btn-yellow {
@@ -123,10 +130,10 @@
   }
 
   .forms {
-    @apply p-3 rounded-md border-darkslateblue bg-blue-200 border-2  text-darkslategrey;
+    @apply bg-lightblue-400  p-3 rounded-md border-darkslateblue border-2  text-darkslategrey;
   }
   .inner-forms {
-    @apply p-3 rounded-md border-darkslateblue bg-gray-200 border-2  text-darkslategrey;
+    @apply bg-gray-200 p-3 rounded-md border-darkslateblue  border-2  text-darkslategrey;
   }
 
   .newtab {
