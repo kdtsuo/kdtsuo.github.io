@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import locationLogo from '../../imgs/icons/locationlogo.png';
+import newtabLogo from '../../imgs/icons/newtablogo.png';
+import newtablogoWhite from '../../imgs/icons/newtablogowhite.png';
 
 
 const Sponsor = ({ image, title, location, mapLink, text, websiteLink }) => {
@@ -11,17 +13,23 @@ const Sponsor = ({ image, title, location, mapLink, text, websiteLink }) => {
                 <img className='w-4/6 lg:w-64 h-auto m-5 md:mx-10 ' src={image} alt='' />
             </a>
             <div className='m-5 w-full'>
-                <a href={websiteLink} target='_blank'>
-                    <h1 className="text-3xl md:text-6xl font-bold text-white group-hover:text-darkslategrey">
-                        {title}
-                    </h1>
+                <a href={websiteLink} target='_blank' >
+                    <div className=' flex justify-center'>
+                        <h1 className="mx-2 text-3xl md:text-6xl font-bold text-white t200e hover:text-darkslategrey">
+                            {title}
+                        </h1>
+                        <img className='newtab' src={newtablogoWhite} alt='new tab icon' />
+                    </div>
                 </a>
                 <a href={mapLink} target='_blank'>
-                    <div className='inline-flex btn-lightblue my-5 items-center t200e'>
+                    <div className='inline-flex btn-lightblue my-5 items-center t200e group'>
                         <img className='w-5 h-5' src={locationLogo} alt='location icon' />
-                        <p className='mx-2 font-light text-darkslategrey text-sm md:text-2xl'>
-                            {location}
-                        </p>
+                        <div className='flex justify-center'>
+                            <p className='mx-2 font-light  text-lg md:text-2xl t200e'>
+                                {location}
+                            </p>
+                            <img className='newtab-sm' src={newtabLogo} alt='new tab icon' />
+                        </div>
                     </div>
                 </a>
                 <br />

@@ -121,4 +121,18 @@
   .isOpen {
     @apply cursor-pointer;
   }
+
+  .forms {
+    @apply p-3 rounded-md border-darkslateblue bg-gray-100 border-2  text-darkslategrey;
+  }
+
+  .newtab {
+    @apply w-10 h-10;
+  }
+  .newtab-sm {
+    @apply w-4 h-4;
+  }
+  .newtab-xs {
+    @apply w-2 h-2;
+  }
 }
