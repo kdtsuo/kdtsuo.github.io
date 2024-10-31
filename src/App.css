@@ -123,7 +123,10 @@
   }
 
   .forms {
-    @apply p-3 rounded-md border-darkslateblue bg-gray-100 border-2  text-darkslategrey;
+    @apply p-3 rounded-md border-darkslateblue bg-blue-200 border-2  text-darkslategrey;
+  }
+  .inner-forms {
+    @apply p-3 rounded-md border-darkslateblue bg-gray-200 border-2  text-darkslategrey;
   }
 
   .newtab {

@@ -62,25 +62,25 @@ const ContactForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='forms w-full lg:w-1/2 m-auto p-10' noValidate>
+        <div onSubmit={handleSubmit} className='forms w-full lg:w-2/3 h-auto m-auto p-10' noValidate>
             <div className='space-y-3 flex flex-col justify-center'>
 
                 <h1 className='text-2xl 0'>Name</h1>
-                <input className={`forms ${isDisabled ? 'bg-gray-500 cursor-not-allowed opacity-50' : ''}`}
+                <input className={`inner-forms ${isDisabled ? 'bg-gray-500 cursor-not-allowed opacity-50' : ''}`}
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     disabled={isDisabled || isLoading} // Disable input based on state
                 />
                 <h1 className='text-2xl '>Email</h1>
-                <input className={`forms ${isDisabled ? 'bg-gray-500 cursor-not-allowed opacity-50' : ''}`}
+                <input className={`inner-forms ${isDisabled ? 'bg-gray-500 cursor-not-allowed opacity-50' : ''}`}
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     disabled={isDisabled || isLoading} // Disable input based on state
                 />
                 <h1 className='text-2xl '>Message</h1>
-                <textarea className={`forms ${isDisabled ? 'bg-gray-500 cursor-not-allowed opacity-50' : ''}`}
+                <textarea className={`inner-forms ${isDisabled ? 'bg-gray-500 cursor-not-allowed opacity-50' : ''}`}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     disabled={isDisabled || isLoading} // Disable textarea based on state
@@ -89,13 +89,15 @@ const ContactForm = () => {
                     type="submit" disabled={isDisabled || isLoading}>
                     Submit
                 </button>
-                {/* Loading indicator */}
-                <h1 className={`${isLoading ? 'block animate-fadein' : 'animate-fadeout hidden'} text-center text-xl text-yellow-500`}>Sending...</h1>
-                <h1 className={`${successMessage ? 'block animate-fadein' : 'animate-fadeout hidden'} text-center text-xl text-green-500`}>{successMessage}</h1>
-                <h1 className={`${errorMessage ? 'block animate-fadein' : 'animate-fadeout hidden'} text-center text-xl text-red-500`}>{errorMessage}</h1>
+
+                <div >
+                    <h1 className={`${isLoading ? 'block animate-fadein' : 'animate-fadeout hidden'} text-center text-xl text-yellow-500`}>Sending...</h1>
+                    <h1 className={`${successMessage ? 'block animate-fadein' : 'animate-fadeout hidden'} text-center text-xl text-green-500`}>{successMessage}</h1>
+                    <h1 className={`${errorMessage ? 'block animate-fadein' : 'animate-fadeout hidden'} text-center text-xl text-red-500`}>{errorMessage}</h1>
+                </div>
 
             </div>
-        </form>
+        </div>
     );
 }
 
