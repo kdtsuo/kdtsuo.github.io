@@ -24,12 +24,12 @@ const QuickLinks = () => {
         true)
     addQuickLink(addsonglogo,
         'KPop Dance Song Requests',
-        'https://docs.google.com/forms/d/e/1FAIpQLSeXDlFXwzjHLg0oSkthJeFg461fGVO7MW7f1nLlBp6ML7aLpQ/viewform',
+        'https://forms.gle/yVZcBeKBWPCm235aA',
         true)
     addQuickLink(
         googleformsicon,
         'Cameraman Application',
-        'https://docs.google.com/forms/d/e/1FAIpQLScVl_PS4pdEdQ_4HwN6OO761pMiz7moYdwuyBTdnEsGE2dj3A/viewform',
+        'https://forms.gle/VAXETY3AUEiwELo56',
         true)
 
     return (

@@ -18,7 +18,7 @@ const Activities = () => {
             <div id='activities' className='my-10'>
 
             </div>
-            <h1 className='title text-center text-white'>What we do!</h1>
+            <h1 className='title text-center text-white'>Activities</h1>
 
             <div>
                 {activities.map((activity, index) => {

@@ -2,6 +2,7 @@ import '../output.css';
 import bgImage from '../imgs/joinourteam.jpeg';
 import googleformsicon from '../imgs/icons/googleformsicon.png';
 import Link from './subcomponents/Link';
+import chevron from '../imgs/icons/rightchevron.png';
 
 const Positions = () => {
 
@@ -12,33 +13,29 @@ const Positions = () => {
     addPosition(
         googleformsicon,
         'Cameraman',
-        'https://docs.google.com/forms/d/e/1FAIpQLScVl_PS4pdEdQ_4HwN6OO761pMiz7moYdwuyBTdnEsGE2dj3A/',
+        'https://forms.gle/VAXETY3AUEiwELo56',
         true)
     addPosition(
         googleformsicon,
         'Senior Executive Team',
-        'https://docs.google.com/forms/d/1YMoKte_cJbfpB5aNznMBXluWn8goLhte7Wpp3GkHVVI',
+        'https://forms.gle/CiTr1LpiXyptXst96',
         false)
 
     addPosition(
         googleformsicon,
         'Junior Executive Team',
-        'https://docs.google.com/forms/d/e/1FAIpQLSeLKmqK6ibtHO8HfItMOioxKjP5kmHdHzQFd4DtF6I3SLpiUg',
+        'https://forms.gle/F31xhy3w14fLz4Xp6',
         false)
     addPosition(
         googleformsicon,
         'Dance Instructor',
-        'https://docs.google.com/forms/d/e/1FAIpQLScTk4EakTgfma8fo72t0mJugyb5VFeL5sEKBlm_A_hXnK4WUg/',
+        'https://forms.gle/t6PtCmFE97UQ41H48',
         false)
     addPosition(
         googleformsicon,
         'Performance Team',
-        'https://docs.google.com/forms/d/e/1FAIpQLSdDBK_xgyeub7Przux1Lle2Ax-c_BDmN0B79Qpf7nKK-PJaXA/',
+        'https://forms.gle/uu783cDkQr49ckvs6',
         false)
-
-
-
-
 
     return (
         <div>
@@ -61,8 +58,9 @@ const Positions = () => {
                         <span className='text-yellow-400'> performing</span>?
                         <br />Join us and be part of our team!
                     </h2>
-                    <a href="#available-positions" className="btn-lightblue paragraph t200e">
-                        Apply now!
+                    <a href="#available-positions" className="flex items-center group btn-lightblue paragraph t200e">
+                        Apply now
+                        <span><img className='ml-3 w-5 h-auto -translate-x-3 group-hover:translate-x-0 group-hover:opacity-100 opacity-0 t200e' src={chevron} alt="chevron icon"></img></span>
                     </a>
                 </div>
 

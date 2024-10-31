@@ -15,7 +15,7 @@ const Link = ({ image, text, link, isOpen }) => {
                     {text}
                 </h1>
 
-                <img className='-translate-x-40 w-4 lg:w-8 h-auto t100d200e opacity-0 group-hover:translate-x-0 group-hover:opacity-100' src={rightChevron} alt='right chevron' />
+                <img className='-translate-x-40 w-4 lg:w-8 h-auto t200e opacity-0 group-hover:translate-x-0 group-hover:opacity-100' src={rightChevron} alt='right chevron' />
 
             </div>
         </a>
