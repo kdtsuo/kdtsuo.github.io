@@ -61,7 +61,7 @@ const Sponsors = () => {
 
     return (
         <div>
-            <div id='sponsors' className='py-10'>
+            <div id='sponsors'>
 
             </div>
 

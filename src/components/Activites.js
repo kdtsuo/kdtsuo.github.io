@@ -14,13 +14,13 @@ const Activities = () => {
     addActivity(showcase, 'k-fest showcase!', 'annually, we host kpop dance concerts to show off our dance skills and creativity!')
 
     return (
-        <div className='my-10 bg-darkslateblue drop-shadow-3xl mp5 '>
-            <div id='activities' className='my-10'>
+        <div className=' bg-darkslateblue drop-shadow-3xl px-5 py-10'>
+            <div className='my-10'>
 
             </div>
             <h1 className='title text-center text-white'>Activities</h1>
 
-            <div>
+            <div className='text-white'>
                 {activities.map((activity, index) => {
                     return (<Activity
                         key={index}

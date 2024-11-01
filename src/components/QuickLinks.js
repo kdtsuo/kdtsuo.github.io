@@ -42,7 +42,7 @@ const QuickLinks = () => {
                 <br /> all kpop fans &#9829;
             </h1>
 
-            <div className='flex flex-wrap justify-center items-center mp3 '>
+            <div className='flex flex-wrap justify-center items-center mp3 pb-12'>
                 {quickLinks.map((ql, index) => {
                     return (
                         <Link

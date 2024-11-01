@@ -4,8 +4,8 @@ import chuugif from '../imgs/chuugif.gif';
 const Farewell = () => {
 
     return (
-        <div className="py-10 ">
-            <h1 className="text-2xl lg:text-4xl text-darkslategrey text-center leading-relaxed m-10">
+        <div className="py-5">
+            <h1 className="text-2xl lg:text-4xl text-darkslategrey text-center leading-relaxed m-5">
                 Thank you for visiting our website ! <br />
                 We love chuu &gt;-&lt;! <br />
             </h1>

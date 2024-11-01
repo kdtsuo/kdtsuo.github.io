@@ -20,11 +20,11 @@ const Contacts = () => {
 
 
     return (
-        <div className='px-5'>
-            <div id="contactsection" className="my-5">
+        <div className=' bg-lightblue-300 p-5'>
+            <div id="contactsection" className="">
                 &nbsp;
             </div>
-            <div id="contact" className="m-5">
+            <div id="contact" className="">
                 <h1 className=" title text-center text-darkslateblue py-10 ">Contacts</h1>
                 <div className="flex justify-center items-center flex-wrap my-10">
                     {contacts.map((contact, index) => (
@@ -38,6 +38,10 @@ const Contacts = () => {
                 </div>
             </div>
             <ContactForm />
+
+            <div className='pb-10'>
+
+            </div>
         </div>
     );
 }

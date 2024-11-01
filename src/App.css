@@ -19,6 +19,10 @@
     @apply bg-lightblue-100 backdrop-filter backdrop-blur-lg shadow-lg bg-opacity-50;
   }
 
+  .transparent-gradient {
+    @apply bg-gradient-to-b from-lightblue-100 to-transparent;
+  }
+
   .mp5 {
     @apply m-5 p-5;
   }
@@ -109,7 +113,7 @@
     @apply text-5xl font-bold;
   }
   .paragraph {
-    @apply text-3xl font-semibold;
+    @apply text-2xl font-light;
   }
   .vl {
     @apply h-96 border-4 m-12;
