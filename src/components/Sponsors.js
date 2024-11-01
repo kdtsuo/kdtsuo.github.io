@@ -66,7 +66,7 @@ const Sponsors = () => {
             </div>
 
             <div id='sponsors' className='bg-darkslateblue items-center p-5 drop-shadow-3xl py-10'>
-                <h1 className='title text-center text-lightblue my-10 p-5'>
+                <h1 className='title text-white text-center my-10 p-5'>
                     Thank you to our
                     <span className='text-yellow-200'> sponsors</span>!
                 </h1>

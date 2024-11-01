@@ -20,8 +20,8 @@ const Contacts = () => {
 
 
     return (
-        <div className='my-5 p-5'>
-            <div id="contactsection" className="my-10">
+        <div className='px-5'>
+            <div id="contactsection" className="my-5">
                 &nbsp;
             </div>
             <div id="contact" className="m-5">
