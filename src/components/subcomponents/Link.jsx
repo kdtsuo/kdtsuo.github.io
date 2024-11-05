@@ -18,7 +18,7 @@ const Link = ({ image, text, link, isOpen, isNew }) => {
         </div>
       )}
       {!isOpen && (
-        <div className="absolute w-full text-xs lg:text-xl  top-0 right-0 m-1 rounded-lg lg:m-5 bg-gray-500 px-2 text-white">
+        <div className="absolute text-xs lg:text-xl  top-0 right-0 m-1 rounded-lg lg:m-5 bg-gray-500 px-2 text-white">
           <h1>NOT AVAILABLE</h1>
         </div>
       )}
