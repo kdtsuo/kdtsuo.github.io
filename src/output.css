@@ -1016,6 +1016,10 @@ video {
   width: 100vw;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .max-w-24 {
   max-width: 6rem;
 }
@@ -1245,6 +1249,10 @@ video {
 
 .pb-12 {
   padding-bottom: 3rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
