@@ -147,6 +147,6 @@
     @apply w-4 h-4;
   }
   .newtab-xs {
-    @apply w-2 h-2;
+    @apply w-3 h-3;
   }
 }

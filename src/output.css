@@ -741,11 +741,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.isOpen {
+.\!isOpen {
   cursor: pointer;
 }
 
-.\!isOpen {
+.isOpen {
   cursor: pointer;
 }
 
@@ -784,8 +784,8 @@ video {
 }
 
 .newtab-xs {
-  height: 0.5rem;
-  width: 0.5rem;
+  height: 0.75rem;
+  width: 0.75rem;
 }
 
 .pointer-events-none {
@@ -1022,10 +1022,6 @@ video {
 
 .max-w-screen-sm {
   max-width: 640px;
-}
-
-.flex-auto {
-  flex: 1 1 auto;
 }
 
 .-translate-x-1\/2 {
@@ -1432,9 +1428,9 @@ video {
     font-weight: 300;
   }
 
-  .lg\:newtab {
-    height: 1.5rem;
-    width: 1.5rem;
+  .lg\:newtab-sm {
+    height: 1rem;
+    width: 1rem;
   }
 }
 
