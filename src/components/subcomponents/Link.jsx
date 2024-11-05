@@ -13,12 +13,12 @@ const Link = ({ image, text, link, isOpen, isNew }) => {
         zoomin-sm t200e group drop-shadow-box`}
     >
       {isNew && (
-        <div className="text-xs lg:text-xl absolute top-0 right-0 m-1 rounded-lg lg:m-5 bg-yellow-400 px-2 text-darkslategrey">
+        <div className="z-10 text-xs lg:text-xl absolute top-0 right-0 m-1 rounded-lg lg:m-5 bg-yellow-400 px-2 text-darkslategrey">
           <h1>NEW</h1>
         </div>
       )}
       {!isOpen && (
-        <div className="text-xs lg:text-xl absolute top-0 right-0 m-1 rounded-lg lg:m-5 bg-gray-500 px-2 text-white">
+        <div className="z-10 text-xs lg:text-xl absolute top-0 right-0 m-1 rounded-lg lg:m-5 bg-gray-500 px-2 text-white">
           <h1>NOT AVAILABLE</h1>
         </div>
       )}
