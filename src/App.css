@@ -141,7 +141,7 @@
   }
 
   .newtab {
-    @apply w-10 h-10;
+    @apply w-6 h-6;
   }
   .newtab-sm {
     @apply w-4 h-4;

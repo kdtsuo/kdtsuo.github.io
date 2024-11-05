@@ -14,7 +14,7 @@ const Sponsor = ({ image, title, location, mapLink, text, websiteLink }) => {
             </a>
             <div className='m-5 w-full'>
                 <a href={websiteLink} target='_blank' >
-                    <div className=' flex justify-center'>
+                    <div className=' flex justify-center '>
                         <h1 className="mx-2 text-3xl md:text-6xl font-bold text-white t200e hover:text-darkslategrey">
                             {title}
                         </h1>

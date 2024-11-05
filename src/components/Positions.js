@@ -15,29 +15,31 @@ const Positions = () => {
         googleformsicon,
         'Senior Executive Team',
         'https://forms.gle/CiTr1LpiXyptXst96',
-        false)
+        false);
 
     addPosition(
         googleformsicon,
         'Junior Executive Team',
         'https://forms.gle/F31xhy3w14fLz4Xp6',
-        false)
+        false);
+
     addPosition(
         googleformsicon,
         'Dance Instructor',
         'https://forms.gle/t6PtCmFE97UQ41H48',
-        false)
+        false);
+
     addPosition(
         googleformsicon,
         'Performance Team',
         'https://forms.gle/uu783cDkQr49ckvs6',
-        false)
+        false);
 
     addPosition(
         googleformsicon,
         'Cameraman',
         'https://forms.gle/VAXETY3AUEiwELo56',
-        true)
+        false,);
 
     positions.sort((a, b) => b.isOpen - a.isOpen);
 

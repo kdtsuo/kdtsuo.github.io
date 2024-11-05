@@ -10,37 +10,38 @@ import googleformsicon from '../imgs/icons/googleformsicon.png';
 const QuickLinks = () => {
     const quickLinks = [];
 
-    const addQuickLink = (image, text, link, isOpen) => quickLinks.push({ image, text, link, isOpen });
+    const addQuickLink = (image, text, link, isOpen, isNew) => quickLinks.push({ image, text, link, isOpen, isNew });
 
-    addQuickLink(
-        rubriclogo,
-        'Memberships & Ticket Sales',
-        'https://campus.hellorubric.com/?s=7805',
-        true)
-    addQuickLink(
-        rubriclogo,
-        'Merch',
-        'https://campus.hellorubric.com/?s=7805',
-        true)
-    addQuickLink(
-        discordlogo,
-        'KDT Discord',
-        'https://discord.com/invite/tbKkvjV2W8',
-        true)
-    addQuickLink(addsonglogo,
-        'KPop Dance Song Requests',
-        'https://forms.gle/yVZcBeKBWPCm235aA',
-        true)
     addQuickLink(
         googleformsicon,
         'K-Fest Assigned Performance Sign-up',
         'https://forms.gle/7dJNbEfny3KFMGtJA',
-        true)
+        true, true);
     addQuickLink(
         googleformsicon,
         'K-Fest Independent Group Sign-up',
         'https://forms.gle/MDp8fYSgtuKUud4z5',
-        true)
+        true, true);
+    addQuickLink(
+        rubriclogo,
+        'Merch',
+        'https://campus.hellorubric.com/?s=7805',
+        true, true);
+    addQuickLink(
+        rubriclogo,
+        'Memberships & Ticket Sales',
+        'https://campus.hellorubric.com/?s=7805',
+        true, false);
+    addQuickLink(
+        discordlogo,
+        'KDT Discord',
+        'https://discord.com/invite/tbKkvjV2W8',
+        true, false);
+    addQuickLink(addsonglogo,
+        'KPop Dance Song Requests',
+        'https://forms.gle/yVZcBeKBWPCm235aA',
+        true, false);
+
 
     return (
         <div>
@@ -61,6 +62,7 @@ const QuickLinks = () => {
                             text={ql.text}
                             link={ql.link}
                             isOpen={ql.isOpen}
+                            isNew={ql.isNew}
                         />
                     )
                 })}
