@@ -10,7 +10,7 @@ const Link = ({ image, text, link, isOpen, isNew }) => {
       target="_blank"
       className={`${isOpen ? "isOpen" : "notOpen"} 
         btn-lightblue py-5 lg:py-10 my-2 lg:my-5 w-full md:w-4/6 lg:w-5/6 
-        zoomin-sm t200e group drop-shadow-box `}
+        zoomin-sm t200e group drop-shadow-box`}
     >
       {isNew && (
         <div className="text-xs lg:text-xl absolute top-0 right-0 m-1 rounded-lg lg:m-5 bg-yellow-400 px-2 text-darkslategrey">
