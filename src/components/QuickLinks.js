@@ -18,6 +18,11 @@ const QuickLinks = () => {
         'https://campus.hellorubric.com/?s=7805',
         true)
     addQuickLink(
+        rubriclogo,
+        'Merch',
+        'https://campus.hellorubric.com/?s=7805',
+        true)
+    addQuickLink(
         discordlogo,
         'KDT Discord',
         'https://discord.com/invite/tbKkvjV2W8',
@@ -28,8 +33,13 @@ const QuickLinks = () => {
         true)
     addQuickLink(
         googleformsicon,
-        'Cameraman Application',
-        'https://forms.gle/VAXETY3AUEiwELo56',
+        'K-Fest Assigned Performance Sign-up',
+        'https://forms.gle/7dJNbEfny3KFMGtJA',
+        true)
+    addQuickLink(
+        googleformsicon,
+        'K-Fest Independent Group Sign-up',
+        'https://forms.gle/MDp8fYSgtuKUud4z5',
         true)
 
     return (
