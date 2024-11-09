@@ -25,7 +25,7 @@ const QuickLinks = () => {
     addQuickLink(
         rubriclogo,
         'Merch',
-        'https://portal.hellorubric.com/?s=7805',
+        'https://campus.hellorubric.com/?s=7805',
         true, true);
     addQuickLink(
         rubriclogo,
