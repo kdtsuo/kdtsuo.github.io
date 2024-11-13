@@ -4,6 +4,7 @@ import bubblewaffle from '../imgs/sponsors/bubblewaffle.png';
 import formosa from '../imgs/sponsors/formosa.png';
 import tossingpizzeria from '../imgs/sponsors/tossingpizzeria.jpeg';
 import macaoimperialtea from '../imgs/sponsors/macaoimperialtea.webp';
+import seoulful from '../imgs/sponsors/seoulful.png';
 import Link from './subcomponents/Link';
 import rubriclogo from '../imgs/icons/hellorubriclogo.png';
 
@@ -13,6 +14,15 @@ const Sponsors = () => {
     const addSponsor = (image, title, location, mapLink, text, websiteLink) => {
         Sponsors.push({ image, title, location, mapLink, text, websiteLink });
     }
+
+    addSponsor(
+        seoulful,
+        'Seoulful Convenience',
+        '1619 Ellis St',
+        'https://www.google.ca/maps/place/Seoulful+Convenience/@49.885116,-119.4959369,17z/data=!3m1!4b1!4m6!3m5!1s0x537df52e4a80e70f:0x77812feb6aba0273!8m2!3d49.8851126!4d-119.493362!16s%2Fg%2F11lnhlpht6?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D',
+        '5% off for KDT members!',
+        'https://seoulfulconvenience.ca/'
+    )
 
     addSponsor(
         macaoimperialtea,
