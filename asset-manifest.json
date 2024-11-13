@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.93c622e0.css",
-    "main.js": "/static/js/main.c7539596.js",
+    "main.js": "/static/js/main.1d845b8b.js",
     "static/media/joinourteam.jpeg": "/static/media/joinourteam.af869c7a25c1e71de076.jpeg",
     "static/media/team.jpeg": "/static/media/team.a7bbdccebe50cc73221c.jpeg",
     "static/media/dancepractice.png": "/static/media/dancepractice.ab0d4cd49aac69f265a8.png",
@@ -11,6 +11,7 @@
     "static/media/bubblewaffle.png": "/static/media/bubblewaffle.1d644e986024161e7bfd.png",
     "static/media/rmlogo.png": "/static/media/rmlogo.f1fb6d5319f1280adec4.png",
     "static/media/kdtlogotransparent.png": "/static/media/kdtlogotransparent.bc23b136d4ce575a842a.png",
+    "static/media/seoulful.png": "/static/media/seoulful.caf7c571b28e3a1e292f.png",
     "static/media/macaoimperialtea.webp": "/static/media/macaoimperialtea.4b568488ccea9e9ccc07.webp",
     "static/media/formosa.png": "/static/media/formosa.ad0ceb298a42ef8a6745.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.648a483df591a7bb4579.png",
@@ -19,10 +20,10 @@
     "static/media/tossingpizzeria.jpeg": "/static/media/tossingpizzeria.d0d2c45f863a61c0a779.jpeg",
     "index.html": "/index.html",
     "main.93c622e0.css.map": "/static/css/main.93c622e0.css.map",
-    "main.c7539596.js.map": "/static/js/main.c7539596.js.map"
+    "main.1d845b8b.js.map": "/static/js/main.1d845b8b.js.map"
   },
   "entrypoints": [
     "static/css/main.93c622e0.css",
-    "static/js/main.c7539596.js"
+    "static/js/main.1d845b8b.js"
   ]
 }
