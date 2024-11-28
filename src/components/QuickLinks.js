@@ -16,17 +16,12 @@ const QuickLinks = () => {
         googleformsicon,
         'K-Fest Assigned Performance Sign-up',
         'https://forms.gle/7dJNbEfny3KFMGtJA',
-        true, true);
-    addQuickLink(
-        googleformsicon,
-        'K-Fest Independent Group Sign-up',
-        'https://forms.gle/MDp8fYSgtuKUud4z5',
-        true, true);
+        true, false);
     addQuickLink(
         rubriclogo,
         'Merch',
         'https://campus.hellorubric.com/?s=7805',
-        true, true);
+        true, false);
     addQuickLink(
         rubriclogo,
         'Memberships & Ticket Sales',
@@ -41,9 +36,6 @@ const QuickLinks = () => {
         'KPop Dance Song Requests',
         'https://forms.gle/yVZcBeKBWPCm235aA',
         true, false);
-
-
-
     return (
         <div>
             <div className='py-20 lg:py-28'>
