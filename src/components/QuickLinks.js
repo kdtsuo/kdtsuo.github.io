@@ -5,12 +5,19 @@ import rubriclogo from '../imgs/icons/hellorubriclogo.png';
 import discordlogo from '../imgs/icons/discordcolorlogo.png';
 import addsonglogo from '../imgs/icons/addsonglogo.png';
 import googleformsicon from '../imgs/icons/googleformsicon.png';
+import linklogo from '../imgs/icons/linklogo.png';
 
 
 const QuickLinks = () => {
     const quickLinks = [];
 
     const addQuickLink = (image, text, link, isOpen, isNew) => quickLinks.push({ image, text, link, isOpen, isNew });
+
+    addQuickLink(linklogo,
+        'Move UBC: KPop Dance Class',
+        'https://anc.ca.apm.activecommunities.com/ubcokanagan/activity/search/detail/46671?onlineSiteId=0&from_original_cui=true',
+        true,
+        true);
 
     addQuickLink(
         googleformsicon,
