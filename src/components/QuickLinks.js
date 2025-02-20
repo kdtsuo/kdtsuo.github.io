@@ -15,7 +15,7 @@ const QuickLinks = () => {
 
     addQuickLink(googleformsicon, 'Showcase Volunteer Sign-up Form', 'https://docs.google.com/forms/d/1wKNqjhKz84gjOZN76VDzymdlz-ExG51RhVHKcygsvn4/edit', true, true);
 
-    addQuickLink(rubriclogo, 'K-Fest Tickets', 'https://campus.hellorubric.com/?s=7805', true, true);
+    addQuickLink(rubriclogo, 'K-Fest Showcase Tickets', 'https://campus.hellorubric.com/?s=7805', true, true);
 
     addQuickLink(
         rubriclogo,
