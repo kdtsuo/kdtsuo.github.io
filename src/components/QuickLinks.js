@@ -13,17 +13,10 @@ const QuickLinks = () => {
 
     const addQuickLink = (image, text, link, isOpen, isNew) => quickLinks.push({ image, text, link, isOpen, isNew });
 
-    addQuickLink(linklogo,
-        'Move UBC: KPop Dance Class',
-        'https://anc.ca.apm.activecommunities.com/ubcokanagan/activity/search/detail/46671?onlineSiteId=0&from_original_cui=true',
-        true,
-        true);
+    addQuickLink(googleformsicon, 'Showcase Volunteer Sign-up Form', 'https://docs.google.com/forms/d/1wKNqjhKz84gjOZN76VDzymdlz-ExG51RhVHKcygsvn4/edit', true, true);
 
-    addQuickLink(
-        googleformsicon,
-        'K-Fest Assigned Performance Sign-up',
-        'https://forms.gle/7dJNbEfny3KFMGtJA',
-        true, false);
+    addQuickLink(rubriclogo, 'K-Fest Tickets', 'https://campus.hellorubric.com/?s=7805', true, true);
+
     addQuickLink(
         rubriclogo,
         'Merch',
