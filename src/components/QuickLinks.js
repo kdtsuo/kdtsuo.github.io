@@ -13,6 +13,8 @@ const QuickLinks = () => {
 
     const addQuickLink = (image, text, link, isOpen, isNew) => quickLinks.push({ image, text, link, isOpen, isNew });
 
+    addQuickLink(linklogo, 'UBCO SQUID GAMES', 'https://www.bouncelife.com/events/670e957fccb9170c0e7e066b', true, true);
+
     addQuickLink(googleformsicon, 'Showcase Volunteer Sign-up Form', 'https://docs.google.com/forms/d/1wKNqjhKz84gjOZN76VDzymdlz-ExG51RhVHKcygsvn4/edit', true, true);
 
     addQuickLink(rubriclogo, 'K-Fest Showcase Tickets', 'https://campus.hellorubric.com/?s=7805', true, true);
