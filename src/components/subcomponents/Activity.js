@@ -1,22 +1,26 @@
+import React from 'react';
 import '../../output.css';
 
-
-const Activity = ({ image, title, text }) => {
-
+const Activity = ({ image, title, text, reverse }) => {
     return (
-        <div className='flex flex-wrap lg:flex-nowrap w-full h-full justify-center items-center my-0 xl:my-10'>
-            <div className='hl block lg:hidden'></div>
-            <div className='vl hidden lg:block'></div>
-            <img className='drop-shadow-3xl point w-5/6 lg:w-2/4 h-auto 
-                            rounded-2xl lg:translate-x-0 lg:hover:translate-x-16 t200e'
-                src={image} alt={title} />
-            <div className='w-4/5 lg:w-2/5 m-3 lg:m-10 z-0'>
-                <h1 className='paragraph font-bold lg:subtitle text-lightblue-100 my-5'>{title}</h1>
-                <p className='lg:paragraph text-white mx-5'>{text}</p>
+        <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} 
+        w-full justify-center items-center gap-8 my-12 p-2 lg:my-20 overflow-hidden`}>
+            <div className="w-full lg:w-1/2 flex justify-center">
+                <img
+                    className="w-11/12 lg:w-5/6 h-auto rounded-xl shadow-lg 
+                    t200e hover:scale-105 object-cover"
+                    src={image}
+                    alt={title}
+                />
+            </div>
+            <div className="w-full lg:w-1/2 p-6 bg-slate-800 backdrop-blur-sm rounded-xl shadow-lg max-w-lg 
+            t200e hover:-translate-y-3 
+            ">
+                <h2 className="text-2xl lg:text-3xl font-bold text-lightblue-100 mb-4 capitalize">{title}</h2>
+                <p className="text-lg text-white leading-relaxed">{text}</p>
             </div>
         </div>
-    )
-
-}
+    );
+};
 
 export default Activity;
