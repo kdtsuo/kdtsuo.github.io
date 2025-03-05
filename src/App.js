@@ -11,12 +11,19 @@ import Contacts from './components/Contacts.js';
 import Copyright from './components/Copyright.js';
 import Sponsors from './components/Sponsors.js';
 import Farewell from './components/Farewell.js';
+import { useEffect } from 'react';
 
 function App() {
   const { isPanelOpen, togglePanel } = useNavbar();
 
+  // redirect to v3
+  useEffect(() => {
+    window.location.replace('https://kdtsuo.github.io/v3');
+  }, [])
+
   return (
     <div className='App'>
+
       <Navbar isPanelOpen={isPanelOpen} togglePanel={togglePanel} />
       <NavbarPanel isPanelOpen={isPanelOpen} togglePanel={togglePanel} />
       <QuickLinks />
