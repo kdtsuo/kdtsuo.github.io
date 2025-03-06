@@ -18,7 +18,7 @@ function App() {
 
   // redirect to v3
   useEffect(() => {
-    window.location.replace('https://kdtsuo.github.io/v3');
+    window.location.replace('https://kdtsuo.vercel.app/');
   }, [])
 
   return (
